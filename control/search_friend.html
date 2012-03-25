@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>搜索好友</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/skincss/main.css" media="all" id="skincss"/>
+<link rel="stylesheet" type="text/css" href="../css/header.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/friend.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/footer.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/pages.css" media="all" />
+<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="../js/snav_tab.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+<!--头部通用主导航 begin-->
+<div class="header_nav">
+    <div id="logo"> <a href="http://www.banding.com.cn/" class="logo" title="半丁社区">半丁LOGO</a> </div>
+    <div class="header_navmenu" >
+        <form action="" id="top_search">
+            <input type="text" value="找人" class="top_sh_input"/>
+            <a href="#" class="top_search_btn" title="查询">查询</a>
+        </form>
+        <ul>
+            <li> <a href="#" class="exit" title="退出">退出</a> </li>
+            <li> <a href="#" class="skin" title="换肤">换肤</a> </li>
+            <li id="routeway"> <a href="#" class="routeway" title="通道">通道</a>
+                <div class="routeway_option" id="routeway_option">
+                    <p> <a href="#" title="游戏大厅">游戏大厅</a> </p>
+                    <p> <a href="#" title="充值中心">充值中心</a> </p>
+                    <p> <a href="#" title="联合运营">联合运营</a> </p>
+                    <p> <a href="#" title="客服中心">客服中心</a> </p>
+                </div>
+            </li>
+            <li> <a href="#" class="email_box" title="信箱">信箱</a> </li>
+            <li> <a href="#" class="invite" title="邀请">邀请</a> </li>
+            <li> <a href="#" class="my_space" title="我的空间">我的空间</a> </li>
+            <li> <a href="#" class="reg_name">wkylin</a> </li>
+        </ul>
+        <div class="emial_box_tips hidden"> <a href="#" class="pop_tips_close">&times;</a> <span class="arrow_tips">arrow</span>
+            <p class=" clearfix"><span class="float_l"><span class="tips_nums">email</span>系统通知知</span><a href="#" class="pop_tips_view">查看</a></p>
+        </div>
+        <div class="invite_tips hidden"> <a href="#" class="pop_tips_close">&times;</a> <span class="arrow_tips2">arrow</span>
+            <p class=" clearfix"><span class="float_l"><span class="tips_nums">invite</span>条系统通知</span><a href="#" class="pop_tips_view">查看</a></p>
+        </div>
+    </div>
+</div>
+<!--头部通用主导航 end-->
+<!--头部通用次导航 begin-->
+<ul class="sbunav_ul clearfix">
+    <li> <a href="myspace_blog.html" class="app_nav"><img src="../images/img_blog.png" width="34" height="34" alt="博客" /><span>博客</span></a></li>
+    <li> <a href="passport_basic.html" class="app_nav"><img src="../images/img_pasport.png" width="34" height="34" alt="通行证" /><span>通行证</span></a></li>
+    <li> <a href="find_friend.html" class="app_curnav"><img src="../images/img_friend.png" width="34" height="34" alt="好友" /><span>好友</span></a></li>
+    <li> <a href="self_webpage.html" class="app_nav"><img src="../images/img_selfweb.png" width="34" height="34" alt="个人主页" /><span>个人主页</span></a></li>
+    <li> <a href="#" class="app_nav"><img src="../images/img_camara.png" width="34" height="34" alt="相册" /><span>相册</span></a></li>
+</ul>
+<!--头部通用次导航 end-->
+<!--页面主体内容模块 begin 复杂部分-->
+<div class="layout_single clearfix">
+    <div class="secondnav">
+        <ul class="navbox">
+            <li><a href="find_friend.html" class="snav_current">寻找好友</a></li>
+            <li><a href="manage_friend.html" class="snav">好友管理</a></li>
+            <li><a href="invite_friend.html" class="snav">邀请好友</a></li>
+            <li><a href="com_friend.html" class="snav">共同好友</a></li>
+        </ul>
+    </div>
+    <div class="topfont">
+        <p class="font_14">&nbsp;</p>
+    </div>
+    <div class="whitecontent">
+        <div class="fsearch_box">
+            <form method="post" name="">
+                <ul class="box">
+                    <li>对方名称:</li>
+                    <li class="cd">
+                        <input type="text" id="" name="" class="box"/>
+                    </li>
+                    <li class="atncd"> <input type="button" value="搜索" class="submit_btn width_50" /> </li>
+                </ul>
+            </form>
+        </div>
+        <div class="boxline"></div>
+        <!--按条件寻找内容-->
+        <form action="#" method="post">
+            <div class="search_title"> <span class="search_all">筛选:</span>
+                <ul class="province">
+                    <li>
+                        <label>省份:</label>
+                        <select name="">
+                            <option>广西贵族自治区</option>
+                            <option>上海</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label>城市:</label>
+                        <select name="">
+                            <option>黄浦区</option>
+                            <option>虹口区</option>
+                            <option>黄浦区</option>
+                            <option>虹口区</option>
+                        </select>
+                    </li>
+                </ul>
+                <ul class="province">
+                    <li class="w_li80">
+                        <label>性别:</label>
+                        <select name="" class="select_40" >
+                        	<option>不限</option>
+                            <option>男</option>
+                            <option>女</option>
+                        </select>
+                    </li>
+                    <li class="w_li100">
+                        <label>年龄:</label>
+                        <select name="" class="select_60">
+                            <option>10-40</option>
+                            <option>20-40</option>
+                            <option>30</option>
+                            <option>40</option>
+                        </select>
+                    </li>
+                </ul>
+                <ul class="province">
+                    <li>
+                        <input type="text" size="20" class="tc_777"value="学校或单位"/>
+                    </li>
+                </ul>
+                <ul class="o">
+                    <li>
+                        <input type="checkbox" name="checkbox" id="checkbox" checked="checked"/>
+                        有头像</li>
+                </ul>
+            </div>
+            <input type="button" value="按条件搜索"  class="submit_btn width_90"/>
+        </form>
+        <div class="boxline"></div>
+        <!--搜索成员-->
+        <div class="search_result">
+            <p>搜索到<span class="rednum">2</span>个结果</p>
+        </div>
+        <div class="search_gfriends clearfix">
+            <div class="fswp_friend_photo"><a href="#"><img src="../images/defaultUserImg100.jpg" alt="" /></a></div>
+            <div class="fswp_friend_content">
+                <p class="fswp_user_name"><a href="#">王见多</a></p>
+                <p class="fswp_simple_info">资料,&nbsp;&nbsp;<span>女</span></p>
+                <p class="fswp_simple_info pad_l35" >上海,&nbsp;&nbsp;<span>卢湾区</span></p>
+                <p class="fswp_simple_info pad_l35">上海大学,&nbsp;&nbsp;<span>上海半丁数码有限公司</span></p>
+                <p class="fswp_simple_info pad_l35">QQ,&nbsp;&nbsp;<span>123454677</span>&nbsp;&nbsp;&nbsp;MSN,<span>44545454545</span></p>
+            </div>
+            <div class="fswp_friend_option clearfix">
+                <div class="hidden"> <a href="#" class="fswp_fo_addf">加为好友</a> </div>
+                <div > <span class="fswp_fo_addedf">已是好友</span> </div>
+                <div> <a href="#" class="fswp_fo_email">发消息</a> </div>
+            </div>
+        </div>
+        <div class="search_gfriends clearfix">
+            <div class="fswp_friend_photo"><a href="#"><img src="../images/defaultUserImg100.jpg" alt="" /></a></div>
+            <div class="fswp_friend_content">
+                <p class="fswp_user_name"><a href="#">王见多</a></p>
+                <p class="fswp_simple_info">资料,&nbsp;&nbsp;<span>女</span></p>
+                <p class="fswp_simple_info pad_l35" >上海,&nbsp;&nbsp;<span>卢湾区</span></p>
+                <p class="fswp_simple_info pad_l35">上海大学,&nbsp;&nbsp;<span>上海半丁数码有限公司</span></p>
+                <p class="fswp_simple_info pad_l35">QQ,&nbsp;&nbsp;<span>123454677</span>&nbsp;&nbsp;&nbsp;MSN,<span>44545454545</span></p>
+            </div>
+            <div class="fswp_friend_option clearfix">
+                <div class="hidden"> <a href="#" class="fswp_fo_addf">加为好友</a> </div>
+                <div > <span class="fswp_fo_addedf">已是好友</span> </div>
+                <div> <a href="#" class="fswp_fo_email">发消息</a> </div>
+            </div>
+        </div>
+       <div class="search_gfriends clearfix">
+            <div class="fswp_friend_photo"><a href="#"><img src="../images/defaultUserImg100.jpg" alt="" /></a></div>
+            <div class="fswp_friend_content">
+                <p class="fswp_user_name"><a href="#">王见多</a></p>
+                <p class="fswp_simple_info">资料,&nbsp;&nbsp;<span>女</span></p>
+                <p class="fswp_simple_info pad_l35" >上海,&nbsp;&nbsp;<span>卢湾区</span></p>
+                <p class="fswp_simple_info pad_l35">上海大学,&nbsp;&nbsp;<span>上海半丁数码有限公司</span></p>
+                <p class="fswp_simple_info pad_l35">QQ,&nbsp;&nbsp;<span>123454677</span>&nbsp;&nbsp;&nbsp;MSN,<span>44545454545</span></p>
+            </div>
+            <div class="fswp_friend_option clearfix">
+                <div class="hidden"> <a href="#" class="fswp_fo_addf">加为好友</a> </div>
+                <div > <span class="fswp_fo_addedf">已是好友</span> </div>
+                <div> <a href="#" class="fswp_fo_email">发消息</a> </div>
+            </div>
+        </div>
+        <div class="search_gfriends clearfix">
+            <div class="fswp_friend_photo"><a href="#"><img src="../images/defaultUserImg100.jpg" alt="" /></a></div>
+            <div class="fswp_friend_content">
+                <p class="fswp_user_name"><a href="#">王见多</a></p>
+                <p class="fswp_simple_info">资料,&nbsp;&nbsp;<span>女</span></p>
+                <p class="fswp_simple_info pad_l35" >上海,&nbsp;&nbsp;<span>卢湾区</span></p>
+                <p class="fswp_simple_info pad_l35">上海大学,&nbsp;&nbsp;<span>上海半丁数码有限公司</span></p>
+                <p class="fswp_simple_info pad_l35">QQ,&nbsp;&nbsp;<span>123454677</span>&nbsp;&nbsp;&nbsp;MSN,<span>44545454545</span></p>
+            </div>
+            <div class="fswp_friend_option clearfix">
+                <div class="hidden"> <a href="#" class="fswp_fo_addf">加为好友</a> </div>
+                <div > <span class="fswp_fo_addedf">已是好友</span> </div>
+                <div> <a href="#" class="fswp_fo_email">发消息</a> </div>
+            </div>
+        </div>
+        <!-- 分页 -->
+        <div class="pages clearfix">
+            <div class="page_list"> <a href="#" class="current_page">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a>... <a href="#">7</a><a href="#">8</a> </div>
+            <div class="next_pre_page"> <a href="#" class="prepage_btn">上一页</a><a href="#" class="nextpage_btn">下一页</a> </div>
+        </div>
+    </div>
+</div>
+<!--页面主体内容模块 end-->
+<div id="footer">&nbsp;</div>
+</body>
+</html>

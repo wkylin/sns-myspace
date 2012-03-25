@@ -1,0 +1,35 @@
+.fontinfo { padding:20px 0px 15px 185px;  width:600px; margin:0 auto;}
+.fontinfo ul {}
+.fontinfo ul li { float:left; padding:0px 5px; }
+.fontinfo ul li img{ padding:1px; border:0 none;}
+.fontinfo ul li p { padding:5px 0px; font-size:14px; }
+.fontinfo ul li p span { padding:0px 5px; }
+.somecontent_info{ padding:0 20px; text-align:center; margin-left:auto; margin-right:auto;}
+.somecontent_info .appendinfo{ padding:0px 30px;}
+.somecontent_info ul {text-align:center; margin-left:auto; margin-right:auto;}
+.somecontent_info ul.select_game {text-align:center; margin-left:auto; margin-right:auto; width:560px; }
+.somecontent_info ul div.games_info{ width:160px;text-align:center;overflow:hidden; padding:2px 5px 0px 12px;line-height:20px; margin:0 auto;}
+.somecontent_info ul div.names_info{ margin:5px; word-wrap:break-word; word-break:break-all; overflow:hidden;}
+
+.somecontent_info ul li {display:inline;float:left; text-align:center; width:80px; height:120px;margin-left:auto; margin-right:auto; }
+.somecontent_info ul li.gamephotos{ width:180px; height:150px;float:left; text-align:center;margin-left:auto; margin-right:auto; display:inline;}
+.somecontent_info ul li img { padding:2px; border:1px #999999 solid; }
+
+.fnext_btninfo { border-color:#e2e2e2 #b7b7b7 #959595 #e2e2e2; border-style: solid; border-width: 1px; color: #333; }/*按钮公共样式*/
+a.fnext_btn { height:30px; display:block; }
+a.fnext_btn span { padding:0px 8px; }
+/*添加好友*/
+.game_personageinfo { /*padding:10px 0px; */ margin-bottom:20px; }
+
+.fnextinfo_btn ul{ width:280px; margin-left:300px;}
+.fnextinfo_btn li{ float:left; height:30px; line-height:30px;}
+.fnextinfo_btn li.btn{ width:120px; margin: auto;}
+.fnextinfo_btn li.words{ padding-left:10px;}
+.finput_info { margin-bottom:20px; padding-left:180px; }
+.finput_info ul li { float:left; height:30px; line-height:30px; }
+.finput_info ul li span { padding:4px 0px; }
+.finput_info ul li p { padding-top:4px; font-size:14px; }
+.finput_info ul li div.boxinfo { float:left; padding:5px 5px; }
+.finput_info ul li div.boxinfo input { border:1px #ccc solid; height:18px; width:150px; }
+.finput_info ul li.input_nameinfo { height:30px; line-height:30px; width:200px; }
+

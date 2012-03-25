@@ -1,0 +1,14 @@
+@charset "utf-8";
+/********************************
+ *author: wkylin 
+ * time:  2010-07-               
+ * link:  270917337@qq.com
+ * info:  add friend css
+ *******************************/
+.mbf_img { float:left; padding:0 10px 5px 0; }
+.mbf_img img { padding:2px; border:1px solid #ccc; background:#fff; }
+.mbf_info { float:left; overflow:hidden; white-space: nowrap; text-overflow:ellipsis; width:110px;}
+.option_sidebar p, .send_request p,.mbf_info p { line-height:18px;text-align:left;  }
+a.add_friend, a.add_friend:hover { display:block; width:69px; height:17px; overflow:hidden; background:url(../images/add_btn.png) no-repeat 0 0; text-indent:1.5em; }
+.option_sidebar a.mbf_change { background:url(../images/mbf_change.png) no-repeat top left; display:block; margin:0 auto; width:99px; height:29px; text-indent:-9999em; }
+.option_sidebar a.mbf_change:hover { background:url(../images/mbf_change.png) no-repeat 0 -29px; display:block; margin:0 auto; width:99px; height:29px; text-indent:-9999em; }

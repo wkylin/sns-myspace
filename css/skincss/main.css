@@ -1,0 +1,127 @@
+@charset "utf-8";
+/********************************
+ * author: wkylin 
+ * time:  2010-07-               
+ * link:  270917337@qq.com
+ * info:  main css
+ *******************************/
+/* 整体结构样式 begin*/
+body { background:#f3fdff url(../../images/skin_img/wrapBg.jpg) repeat-x center top; width:auto; min-width:800px; margin:0 auto; text-align:center; color:#343434; font-family: "\5b8b\4f53"; }
+/* import header.css */
+.layout_main { width:800px; margin:5px auto 0; position:relative; background:#caf1ff; }/*两列布局*/
+.layout_single { width:800px; margin:5px auto 0; position:relative; background:#caf1ff;/*d2e6f7*/ padding-bottom:20px; }/*单列布局*/
+.layout_main .sidebar, .content { float:left; display:inline; text-align:left; }
+.layout_main .sidebar { width:200px; background:#caf1ff; }/* 侧边栏 */
+.layout_main .content { width:600px; background:#fff; }/* 主要内容 */
+/* 通道 */
+.header_navmenu ul li .routeway_option { position:absolute; top:20px; right:0; background:#98d2dd; border:1px solid #3a98b4; border-bottom:none; display:none; z-index:99999; }
+.header_navmenu ul li .routeway_option a { display:block; height:20px; line-height:20px; text-align:center; width:80px; font-size:12px; color:#2c4b8e; border-bottom:1px solid #3a98b4; }
+.header_navmenu ul li .routeway_option a:hover { background:#d7f9ff; }
+.header_navmenu ul a.routeway, a.routeway:hover { display:block; width:44px; height:23px; background:url(../../images/triangle.png) no-repeat right center; line-height:23px; }
+/* 头部导航 */
+a.exit, a.exit:hover, a.invite, a.invite:hover, a.email_box, a.email_box:hover, a.my_space, a.my_space:hover, a.routeway, a.routeway:hover, a.reg_name, a.reg_name:hover, a.skin, a.skin:hover { color:#c4efff; }
+a.exit:hover, a.invite:hover, a.email_box:hover, a.my_space:hover, a.routeway:hover, a.reg_name:hover, a.skin:hover { text-decoration:underline; }
+/* 应用导航 */
+ul.sbunav_ul a.app_nav { color:#c4efff; }
+ul.sbunav_ul a.app_nav:hover { color:#fff; }
+ul.sbunav_ul a.app_curnav { color:#fff; }
+a.selfsite_color { padding-top:10px; display:block; color:#1855a2; }
+/*may_interested */
+.mbf_info p { color:#333; }
+.mbf_info p a { color:#2b4a78; }
+ul.may_interested li a { color:#2b4a78; }
+a.add_friend { color:#2b4a78; }
+a.add_friend:hover { color:#e56f10; text-decoration:underline; }
+/* 数字提示 */
+.num_tips { color:#666; }
+.font_num { font-family:Georgia; font-size:16px; color:#25333d; }
+/* 个人主页 */
+.login h1 { color:#eb6100; }
+.login a.forget_pswd { color:#1855a2; }
+.user_name { color:#455a6b; }
+.option_sidebar a{display:block;}
+.option_sidebar ul.swp_friend_ul li a.swp_username, a.swp_username:hover { padding-top:5px; display:block; text-decoration:none; color:#2b4a78; word-wrap:break-word; word-break:break-all; overflow:hidden;}
+.option_sidebar a.swp_more_friend, a.swp_more_friend:hover { padding:15px 0 0 10px; text-decoration:underline; color:#2b4a78; display:block; }
+span.swp_sum_title { color:#455a6b; }
+span.swp_sum_num { font-family:Georgia; font-size:16px; color:#588ccb; }
+/*好友 通行证 导航样式 */
+.secondnav { height:28px; line-height:28px; width:800px; background:#06C; }
+ul.navbox li { float:left; width:75px; height:28px; margin:0 0 0 10px; text-align:center; font-weight:bold; display:inline; cursor:pointer; }
+ul.navbox a.snav, a.snav_current, a.snav:hover { width:75px; height:28px; display:block; }
+ul.navbox a.snav { color:#fff; }
+ul.navbox a.snav_current { color:#333; background:#caf1ff; }
+ul.navbox a.snav:hover { color:#333; background:#caf1ff; }
+.whitecontent { width:770px; margin:0 auto; padding-bottom:20px; background:#fff; text-align:left; min-height:500px; }
+.topfont { width:770px; margin:0 auto; position:relative; }
+.topfont p { line-height:40px; font-size:14px; text-align:left; }
+.topfont a { color:#1855a2; }
+/*左侧分类标题*/
+.sidebar .option_bar { padding:10px 0 0 20px; }
+.sidebar .option_bar h2 { margin:0 0 0 10px; font-weight:bold; }
+.option_sidebar h2 { width:100%; height:23px; line-height:23px; margin-bottom:5px; font-size:12px; font-weight:bold; text-indent:1em; color:#343237; }
+/*微博分类样式*/
+.option_bar ul.blog_menu_tab li, li.my_blog, li.myblog_cur { display:block; text-indent:3em; width:auto; text-decoration:none; height:28px; line-height:28px; cursor:pointer; font-size:14px; }
+.option_bar ul li.my_blog { background:#a3e0f5; }
+.option_bar ul li.myblog_cur { background:#fff; border:1px solid #a3e0f5; border-right:none; }
+.blog_menu_tab li a { color:#1855a2; }
+.option_bar ul li.myblog_cur a { color:#1855a2; }
+/* 好友管理 */
+.f_option_sidebar ul.f_groups li, li.f_group_cur, ul.f_groups li a { color:#1855a2; }
+.f_option_sidebar ul li.f_group { background:#a3e0f5; }
+.f_option_sidebar ul li.f_group_cur { background:#fff; border:1px solid #a3e0f5; border-right:none; }
+.f_option_sidebar ul li.f_group_cur a { color:#1855a2; }
+.f_option_sidebar .fgroup_submit a { color:#333; }
+.add_group a.new_group { color:#1855a2; }
+/*左侧主要内容*/
+.option_bar .user_info .user_info_w, .user_info_f { width:60px; padding-left:10px; height:40px; text-align:left; color:#455a6b; }
+.user_info_w .user_info_num, .user_info_f .user_info_num { font-family:Georgia; font-size:16px; color:#25333d; }
+.talk_top_option ul.tc_blog li { color:#2A4A79; }
+/*微博发表 */
+.status_update { background:none; width:580px; height:158px; padding:10px 10px 0; z-index:9999; }
+/*微博列表 top*/
+.talk_mid_cont { width:578px; padding:10px 10px 0 10px; clear:both; background:#fff; font-family: "\5b8b\4f53"; margin-bottom:15px; }/*微博内容*/
+.talk_top_option { width:578px; clear:both; background:#e4e9ec; border:1px solid #dde5e7; border-bottom:none; height:28px; z-index:1; margin:0 auto; }
+.swp_top_option { color:#535353; text-indent:1em; background:#E4E9EC; font-weight:bold; height:28px; line-height:28px; width:578px;margin:0 auto; }
+.talk_top_option p.blog_title { line-height:28px; font-weight:bold; text-indent:1em; color:#2A4A79; }
+.talk_top_option ul li a.talk_title, a.talk_title:hover, a.talk_title_curt { width:100%; height:25px; line-height:25px; margin-top:3px; display:block; color:#2a4975; }
+.talk_top_option ul li a.talk_title:hover { background:#fff; color:#365a6d; }
+.talk_top_option ul li a.talk_title_curt { background:#fff; color:#365a6d; }
+/* 同城微博 */
+.talk_top_option ul.tc_blog select { width:66px; background:#daedff; position:absolute; top:3px; left:5px; height:22px; padding:2px; border:1px solid #8f8f8f; }
+/* 更多 */
+a.more_btn, a.more_btn:hover { width:516px; height:30px; line-height:30px; color:#000; text-align:center; margin:15px auto 15px; display:block; }
+a.more_btn { background:url(../../images/more_btn.gif) no-repeat 0 0; }
+a.more_btn:hover { background:url(../../images/more_btn.gif) no-repeat 0 -30px; }
+/* 按钮样式 */
+.submit_btn, .fsubmit_btn { background-color:#ececec; border-color:#e2e2e2 #b7b7b7 #959595 #e2e2e2; border-style: solid; border-width: 1px; color: #333; cursor: pointer; text-align: center; display:block; margin:0 auto; padding:0 5px; }
+.submit_btn { font-size: 12px; height:25px; line-height:25px; }
+.submit_btn:hover { background-color:#f6f6f6; }
+.fsubmit_btn { font-size:12px; height:20px; line-height:20px; margin-left:10px; width:30px; float:left; }
+/*按钮宽度设置*/
+.width_90 { width:90px; }
+.width_70 { width:70px; }
+.width_50 { width:50px; }
+.width_60 { width:60px; }
+.width_120 { width:120px; }
+.ml_25 { margin-left:25px; display:inline; }
+.ml_15 { margin-left:15px; display:inline; }
+.mr_25 { margin-right:25px; display:inline; }
+.mr_15 { margin-right:15px; display:inline; }
+/* 系统提示信息 */
+.sys_msg { background:#ffc; margin:0 auto; text-align:center; line-height:30px; border:1px solid #eee; }
+.h_line { margin:10px auto; width:200px; height:0; border-bottom:1px solid #a3e0f5; text-indent:-9999em; }
+/* 微博图片操作 */
+.artZoomBox .tool a.hideImg, .artZoomBox .tool a.imgLeft, .artZoomBox .tool a.imgRight, .artZoomBox .tool a.viewImg { background: #caf1ff; color: #3a6ea5; }
+.artZoomBox .tool a.hideImg:hover, .artZoomBox .tool a.imgLeft:hover, .artZoomBox .tool a.imgRight:hover, .artZoomBox .tool a.viewImg:hover { background: #e2eaec; color: #1855a2; }
+/*链接样式*/
+a { color:#1855a2; }
+/* 弹出框换肤样式 */
+.popup_dialog { border:4px solid #a3a3a3; padding:2px; margin:0 auto; color:#fff; background:#fff; position:relative; }
+.dialog_title { height:23px; line-height:23px; background-color:#1e74b4; font-size:14px; text-align:left; text-indent:1em; color:#fff; }
+/*返回顶部样式*/
+a.goTop { width:30px; height:91px; display:block; cursor:pointer; background:url(../../images/return_top.png) 0 0 no-repeat; text-indent:-9999em; }
+.backTop { position:fixed; _position:absolute; width:30px; height:91px; left:50%; margin-left:405px; visibility:visible; bottom:30px; }
+* html .backTop { position: absolute; margin-top:-30px; top:expression(eval(document.compatMode &&document.compatMode=='CSS1Compat') ?documentElement.scrollTop+(documentElement.clientHeight-this.clientHeight) : document.body.scrollTop +(document.body.clientHeight-this.clientHeight));
+}
+/* import footer.css */
+/* 整体结构样式 end*/

@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+/********************************
+ * author: wkylin 
+ * time:  2010-12-13            
+ * link:  270917337@qq.com
+ * info:  dialog content.css
+ *******************************/
+/* 添加好友 */
+.addf_dialog { width:370px; height:150px; background:#fff; }
+.addf_dialog ul li { width:55px; padding:8px 0 0 8px; float:left; }
+.addf_dialog ul li img { padding:2px; border:1px #ccc solid; }
+.addf_dialog ul li.swap { width:290px; }
+.addf_dialog ul li p { line-height:18px; text-align:left; }
+.addf_textarea { width:290px; height:85px; border:1px solid #D0D0D0; overflow:hidden; }
+/* 发送好友请求 */
+.send_request { width:560px; height:240px; background:#FFF; }
+.send_request p.lh50{line-height:50px; text-indent:1em;}
+.send_request ul li { float:left; /*width:140px;*/ padding-left:10px; white-space: nowrap; padding-bottom:10px; }
+/* 系统提示操作 */
+.dialog_tip { width:300px; height:100px; background:#fff; }
+.dialog_tip p{line-height:35px; text-indent:1em;text-align:left;}
+/* 发送私信 */
+.sendletter { width:400px; height:160px; background:#FFF; }
+.sendletter p{ line-height:23px; text-indent:1em; text-align:left;}
+p.sendsucc {text-align:center; font-size:24px; color:#0C3; line-height:70px;}
+.sl_texarea { width:375px; height:70px; overflow:hidden; border:1px solid #A0A0A0; display:block; margin:0 auto; }
+.letter_num{position:absolute; right:130px; bottom:0; color:#A2A1A1; width:120px;}
+/* 换肤 */
+.skin_style { width:420px; height:140px; background:#fff; position:relative;}
+.skin_style ul li { width:126px; margin:10px 0 0 11px;float:left;position:relative; cursor:pointer; display:inline; }
+.skin_style ul li img.skin_current{border:2px solid #909;}
+.skin_style ul li img{border:1px solid #aaa;padding:2px;}
+.skin_style ul li p{position:absolute; left:3px; bottom:3px; width:120px;color:#fff; line-height:20px; background:#333; text-align:center;}
+/* 锁定层 */
+#backgroundPopup { display:none; position:fixed; _position:absolute; /* hack for internet explorer 6*/ height:100%; width:100%; top:0; left:0; background:#000; z-index:9998; }

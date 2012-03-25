@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>换肤设置</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/skincss/main.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/appear_css/popup_dialog_cont.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/appear_css/popup_dialog_wrap.css" media="all" />
+<script type="text/javascript" src="../js/jquery-1.4.4.js"></script>
+<script type="text/javascript">
+	$(function(){
+			   var dialog_w=$(".skin_style").width();
+			   $(".popup_dialog").width(dialog_w);
+			   });
+</script>
+</head>
+<body style=" background:#fff; margin:30px auto;">
+<div class="popup_dialog">
+    <div class="dialog_title">选择自己的风格</div>
+    <div class="dialog_close">&times;</div>
+    <div class="dialog_content">
+        <div class="skin_style">
+            <ul id="skin_style">
+                <li id="main"><img src="../images/skin_bg01.gif" width="120" height="60" alt="默认皮肤" />
+                    <p>默认皮肤</p>
+                </li>
+                <li id="main2"><img src="../images/skin_bg02.gif" width="120" height="60" alt="皮肤二" />
+                    <p>皮肤二</p>
+                </li>
+                <li id="main3"><img src="../images/skin_bg03.gif" width="120" height="60" alt="皮肤三" />
+                    <p>皮肤三</p>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="dialog_btn clearfix"><input type="button" value="取消" class="dialog_rstbtn float_r ml_15" /><input type="button" value="确定" class="dialog_subbtn float_r " /></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+@charset "utf-8";
+/********************************
+ *author: wkylin 
+ * time:  2010-07-               
+ * link:  270917337@qq.com
+ * info:  micblog css
+ *******************************/
+ @import url("add_friend.css");
+/*微博 左栏导航 */
+.option_bar .img { border:2px solid #fff; }
+.option_bar .padd_left { padding-left:30px; }
+.option_bar .user_info { float:left; line-height:18px; margin-top:5px; }
+.option_bar .user_grade { clear:both; height:100%; margin:10px 0 0 0; }
+.option_bar .user_grade ul { padding:10px 0 0 10px; }
+.option_bar .user_grade ul li { float:left; display:inline; padding:0 5px 0 0; }
+.option_sidebar { margin-bottom:20px; }
+ul.may_interested { margin:10px 0; }
+ul.may_interested li { padding:5px 5px 5px 15px; }
+.topic_input { width:120px; height:20px; line-height:20px; border:1px solid #aaa;/*77bfde*/ color:#767676; margin:0 0 0 10px; float:left; }
+.option_sidebar a.topic_btn { background:url(../images/topic_btn.png) no-repeat top left; display:block; width:67px; height:29px; float:left; margin-left:10px; text-indent:-99999em; }
+.option_sidebar a.topic_btn:hover { background:url(../images/topic_btn.png) no-repeat 0 -30px; display:block; width:67px; height:29px; float:left; }
+.talk_top_option ul li { float:left; display:inline; width:58px; height:28px; line-height:28px; font-weight:bold; padding-left:8px; text-align:center; }
+.talk_top_option ul.tc_blog li { flaot:left; position:relative; display:inline; width:68px; height:28px; line-height:28px; font-weight:bold; padding-left:8px; text-align:center; }
+.talk_top_option ul.tc_blog li input { position:absolute; top:2px; left:5px; }
+.talk_top_option ul.at_talk li { float:left; height:28px; line-height:28px; }
+.talk_top_option ul.at_talk li.talks_one { width:340px; text-align:left; }
+.talk_top_option ul.at_talk li.talks_two { width:208px; text-align:right; }
+.talk_top_option ul.at_notalk li.talks_one { width:340px; text-align:left; }
+/* 微博 话题列表 */
+.talk_mid_cont ol li { border-bottom:1px dashed #c9ded8; padding:10px 0 5px 0; }
+.talk_mid_cont ol li a { color:#1855a2; }
+.talk_mid_cont img { border:1px solid #ccc; padding:2px; vertical-align:top; }
+.talk_mid_cont .newsbox { background:none repeat scroll 0 0 #fffeec; color:#2B2B2B; cursor:pointer; line-height:24px; padding:4px 0; text-align:center; }
+.talk_mid_cont .msg_cont { padding:0 0 5px 60px; }
+.talk_mid_cont .msg_cont .author { float:left; margin:2px 0 0 -60px; }
+.talk_mid_cont .msg_cont .retop_option { width:54px; height:54px; text-align:center; color:#365a6d; background:url(../images/retop_option_bg.gif) no-repeat 0 0; float:left; margin:2px 0 0 -60px; line-height:25px; cursor:pointer; }
+.talk_mid_cont .msg_txt, .msg_img, .msg_img_game, .badge_img { color:#333; font-size:12px; word-wrap:break-word; line-height:20px;  z-index:9999;margin-left:5px; }
+.talk_mid_cont .msg_txt img, .badge_img img { border:0 none; vertical-align:middle; }
+.talk_mid_cont .msg_img_game img, .talk_mid_cont.msg_img img { border:1px solid #ccc; padding:2px; background:#fff; }
+.talk_mid_cont .msg_img_txt { float:left; width:340px; margin-left:5px; }
+.talk_mid_cont .msg_img_txt p { text-indent:2em; }
+.talk_mid_cont .msg_img_txt a { display:block; margin-top:10px; }
+.talk_mid_cont .msg_reply { background:#fff; padding:5px; border:1px solid #dcdcdc;margin-left:5px; background:#f8f8f8; }
+.talk_mid_cont .msg_reply .msg_retxt { color:#535353; font-size:12px; line-height:23px;margin-left:5px; }
+.talk_mid_cont .msg_reply .msg_retxt img {border:0 none;}
+.talk_mid_cont .sub_link { color:#999; word-wrap:break-word; height:21px; line-height:21px; margin-left:5px; }
+.talk_mid_cont .sub_link .blog_option { float:right; display:inline; }
+.talk_mid_cont .sub_link .blog_option a { padding:0 2px; text-decoration:underline; }
+.talk_mid_cont .msg_status { overflow:hidden; float:left; }
+.talk_mid_cont .dilog_cont { margin-left:10px; position:relative; float:left; display:inline; }
+.talk_mid_cont .dilog_cont .dilog_maincnt { background:#f8f8f8; padding:5px; border:1px solid #dcdcdc; width:510px; position:absolute; top:20px; left:-130px; _left:-130px; *left:-130px;/*left:-150px; _left:-150px; *left:-150px;*/
+}
+.talk_mid_cont .dilog_cont .dilog_maincnt img{border:0 none;}
+/*搜索结果显示无*/
+.talk_search_result { padding:10px 0 5px 0; }
+.talk_search_result p { line-height:30px; padding-left:20px; }
+/*博客转发*/
+.return_myblog { margin-top:20px; }
+.blog_content { padding-bottom:10px; }
+.blog_content img{ border:0 none;}
+.blog_content .msg_img img{border:1px solid #ccc;}
+.blog_content a { color:#1855A2; }
+.blog_content p { line-height:21px; font-size:13px; margin-bottom:5px; }
+.blog_time { float:left; }
+.blog_option { float:right; }
+.countnum { margin:10px; }
+.countnum p { line-height:23px; font-size:14px; }

@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>好友管理</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/skincss/main.css" media="all" id="skincss"/>
+<link rel="stylesheet" type="text/css" href="../css/header.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/footer.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/friend.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/pages.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/appear_css/popup_dialog_wrap.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/appear_css/popup_dialog_cont.css" media="all" />
+<script type="text/javascript" src="../js/jquery-1.4.2.js" ></script>
+<script type="text/javascript" src="../js/managerf.js" charset="utf-8"></script>
+<script type="text/javascript" src="../js/snav_tab.js" charset="utf-8"></script>
+<script type="text/javascript" src="../js/common.js" charset="utf-8"></script>
+<script type="text/javascript" src="../js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="../js/jquery.pagination.js"></script>
+<script type="text/javascript">
+$(function(){
+        $(".fmcont_dele_btn").click(function(){
+            $.blockUI({
+                message: $('#relieves_request')
+            });
+            $('.blockOverlay').attr('title', '单击关闭！').click($.unblockUI);
+            $('.popupContactClose,.qbtn,.cbtn').click($.unblockUI);
+        });
+			
+
+		 $(".fmcont_rerelation").each(function(index){
+			$(this).attr("id", "frel_relation_" + index);
+			var frel_a = $("#frel_relation_" + index);
+			frel_a.click(function(){
+				$.blockUI({
+					message: $('#rel_relation')
+				});
+				$('.blockOverlay').attr('title', '单击关闭！').click($.unblockUI);
+				$('.popupContactClose,.qbtn,.cbtn').click($.unblockUI);
+			});
+		});
+		 
+		 $("#pagination").pagination(8000, {
+			num_edge_entries: 1, //边缘页数
+			num_display_entries:3, //主体页数
+			items_per_page:10, //每页显示1项
+			prev_text: "上一页 ",
+			next_text: "下一页"
+		});
+		 
+		
+});
+
+</script>
+</head>
+<body>
+<!--头部通用主导航 begin-->
+<div class="header_nav">
+    <div id="logo"> <a href="http://www.banding.com.cn/" class="logo" title="半丁社区">半丁LOGO</a> </div>
+    <div class="header_navmenu" >
+        <form action="" id="top_search">
+            <input type="text" value="找人" class="top_sh_input"/>
+            <a href="#" class="top_search_btn" title="查询">查询</a>
+        </form>
+        <ul>
+            <li> <a href="#" class="exit" title="退出">退出</a> </li>
+            <li> <a href="#" class="skin" title="换肤">换肤</a> </li>
+            <li id="routeway"> <a href="#" class="routeway" title="通道">通道</a>
+                <div class="routeway_option" id="routeway_option">
+                    <p> <a href="#" title="游戏大厅">游戏大厅</a> </p>
+                    <p> <a href="#" title="充值中心">充值中心</a> </p>
+                    <p> <a href="#" title="联合运营">联合运营</a> </p>
+                    <p> <a href="#" title="客服中心">客服中心</a> </p>
+                </div>
+            </li>
+            <li> <a href="#" class="email_box" title="信箱">信箱</a> </li>
+            <li> <a href="#" class="invite" title="邀请">邀请</a> </li>
+            <li> <a href="#" class="my_space" title="我的空间">我的空间</a> </li>
+            <li> <a href="#" class="reg_name">wkylin</a> </li>
+        </ul>
+        <div class="emial_box_tips hidden"> <a href="#" class="pop_tips_close">&times;</a> <span class="arrow_tips">arrow</span>
+            <p class=" clearfix"><span class="float_l"><span class="tips_nums">email</span>系统通知知</span><a href="#" class="pop_tips_view">查看</a></p>
+        </div>
+        <div class="invite_tips hidden"> <a href="#" class="pop_tips_close">&times;</a> <span class="arrow_tips2">arrow</span>
+            <p class=" clearfix"><span class="float_l"><span class="tips_nums">invite</span>条系统通知</span><a href="#" class="pop_tips_view">查看</a></p>
+        </div>
+    </div>
+</div>
+<!--头部通用主导航 end-->
+<!--头部通用次导航 begin-->
+<ul class="sbunav_ul clearfix">
+    <li> <a href="myspace_blog.html" class="app_nav"><img src="../images/img_blog.png" width="34" height="34" alt="博客" /><span>博客</span></a></li>
+    <li> <a href="passport_basic.html" class="app_nav"><img src="../images/img_pasport.png" width="34" height="34" alt="通行证" /><span>通行证</span></a></li>
+    <li> <a href="find_friend.html" class="app_curnav"><img src="../images/img_friend.png" width="34" height="34" alt="好友" /><span>好友</span></a></li>
+    <li> <a href="self_webpage.html" class="app_nav"><img src="../images/img_selfweb.png" width="34" height="34" alt="个人主页" /><span>个人主页</span></a></li>
+    <li> <a href="#" class="app_nav"><img src="../images/img_camara.png" width="34" height="34" alt="相册" /><span>相册</span></a></li>
+</ul>
+<!--头部通用次导航 end-->
+<!--页面主体内容模块 begin 复杂部分-->
+<div class="layout_main clearfix">
+    <div class="secondnav">
+        <ul class="navbox">
+            <li><a href="find_friend.html" class="snav">寻找好友</a></li>
+            <li><a href="manage_friend.html" class="snav_current">好友管理</a></li>
+            <li><a href="invite_friend.html" class="snav">邀请好友</a></li>
+            <li><a href="com_friend.html" class="snav">共同好友</a></li>
+        </ul>
+    </div>
+    <!--sidebar begin-->
+    <div class="sidebar">
+        <div class="f_option_sidebar clearfix">
+            <div class="f_topic_search clearfix">
+                <form action="#" method="post">
+                    <input type="text" name="" value="输入感兴趣的" class="f_topic_input" />
+                    <input type="submit" value="查 找"  class="submit_btn width_70"/>
+                </form>
+            </div>
+            <h2 class="hidden">好友管理列表项</h2>
+            <ul class="f_groups">
+                <li class="f_group_cur"> <a href="#" >所有好友</a> </li>
+                <li> <a href="#" class="">同事同事</a>
+                    <div class="f_group_option hidden"> <a href="#" title="删除" class="f_group_dele">&times;</a><a href="#" class="f_group_edit">编辑</a> </div>
+                    <div class="fgroup_submit hidden clearfix">
+                        <input type="text" name="" id="" />
+                        <a href="#"class="fsubmit_btn">确定</a> </div>
+                </li>
+                <li> <a href="#" class="">同事同事</a>
+                    <div class="f_group_option hidden"> <a href="#" title="删除" class="f_group_dele">&times;</a><a href="#" class="f_group_edit">编辑</a> </div>
+                    <div class="fgroup_submit hidden clearfix">
+                        <input type="text" name="" id="" />
+                        <a href="#"class="fsubmit_btn">确定</a> </div>
+                </li>
+                <li> <a href="#" class="">同事同事</a>
+                    <div class="f_group_option hidden"> <a href="#" title="删除" class="f_group_dele">&times;</a><a href="#" class="f_group_edit">编辑</a> </div>
+                    <div class="fgroup_submit hidden clearfix">
+                        <input type="text" name="" id="" />
+                        <a href="#"class="fsubmit_btn">确定</a> </div>
+                </li>
+                <li> <a href="#" class="">同事同事</a>
+                    <div class="f_group_option hidden"> <a href="#" title="删除" class="f_group_dele">&times;</a><a href="#" class="f_group_edit">编辑</a> </div>
+                    <div class="fgroup_submit hidden clearfix">
+                        <input type="text" name="" id="" />
+                        <a href="#"class="fsubmit_btn">确定</a> </div>
+                </li>
+                <li> <a href="#" class="">同事同事</a>
+                    <div class="f_group_option hidden"> <a href="#" title="删除" class="f_group_dele">&times;</a><a href="#" class="f_group_edit">编辑</a> </div>
+                    <div class="fgroup_submit hidden clearfix">
+                        <input type="text" name="" id="" />
+                        <a href="#"class="fsubmit_btn ">确定</a> </div>
+                </li>
+            </ul>
+        </div>
+        <div class="h_line">
+            <!--<img src="../images/h_line.gif" alt="" width="200" height="2"/>-->
+        </div>
+        <div class="add_group clearfix"> <a href="javascript:void(0)" class="new_group ">创建新的分组</a>
+            <div class="hidden">
+                <input type="text" name="" id="ipt_text" value="新分组名称" class="ipt_text" />
+                <input type="submit" value="确定"class="submit_btn float_l width_50 ml_15" id="new_group_submit"/>
+                <input type="reset" value="取消"class="submit_btn float_l width_50 ml_15" id="new_group_reset"/>
+            </div>
+        </div>
+    </div>
+    <!--sidebar end-->
+    <!--content bgegin-->
+    <div class="content" >
+        <!-- 管理好友右侧主题内容 begin -->
+        <div class="main_content">
+            <div class="friend_num"><span >共有 234 位好友</span><span class="hidden">还没有好友！！！</span></div>
+            <ol class="f_manager">
+                <li class="clearfix">
+                    <div class="f_manager_img"><img src="../images/defaultUserImg50.jpg" alt="" /></div>
+                    <div class="f_manager_content">
+                        <p class="f_user_name">古天乐</p>
+                        <p class="f_address hidden">上海，松江</p>
+                        <p class="f_systips ">好友请求等待确认中</p>
+                    </div>
+                    <div class="relievesrequest"> <img src="../images/relievesreq_bg.png" alt="" /> </div>
+                    <a href="javascript:void(0)"class="fmcont_dele_btn" title="取消请求"></a>
+                    <div class="f_select_group"> <a href="#" class="select_group"></a>
+                        <!--选择分组-->
+                        <div class="select_group_option hidden">
+                            <ul class="select_group_ul">
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_01"/>
+                                    <label for="f_group_01"> <a href="#"> 同学</a> </label>
+                                </li>
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_02"/>
+                                    <label for="f_group_02"> <a href="#"> 同学同学</a> </label>
+                                </li>
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_03"/>
+                                    <label for="f_group_03"> <a href="#">同学同学</a> </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="f_manager_img"><img src="../images/defaultUserImg50.jpg" alt="" /></div>
+                    <div class="f_manager_content">
+                        <p class="f_user_name">古天乐</p>
+                        <p class="f_address">上海，松江</p>
+                        <p class="f_systips hidden">好友请求等待确认中</p>
+                    </div>
+                    <div class="relievesrelation"> <img src="../images/relievesrelation_bg.png" alt="" /> </div>
+                    <a href="javascript:void(0)" class="fmcont_rerelation" title="解除关系"></a>
+                    <div class="f_select_group"> <a href="#" class="select_group"></a>
+                        <!--选择分组-->
+                        <div class="select_group_option hidden">
+                            <ul class="select_group_ul">
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_04"/>
+                                    <label for="f_group_04"> <a href="#"> 同学</a> </label>
+                                </li>
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_05"/>
+                                    <label for="f_group_05"> <a href="#"> 同学同学</a> </label>
+                                </li>
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_06"/>
+                                    <label for="f_group_06"> <a href="#">同学同学</a> </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="f_manager_img"><img src="../images/defaultUserImg50.jpg" alt="" /></div>
+                    <div class="f_manager_content">
+                        <p class="f_user_name">古天乐</p>
+                        <p class="f_address">上海，松江</p>
+                        <p class="f_systips hidden">好友请求等待确认中</p>
+                    </div>
+                    <div class="relievesrelation"> <img src="../images/relievesrelation_bg.png" alt="" /> </div>
+                    <a href="javascript:void(0)" class="fmcont_rerelation" title="解除关系"></a>
+                    <div class="f_select_group"> <a href="#" class="select_group"></a>
+                        <!--选择分组-->
+                        <div class="select_group_option hidden">
+                            <ul class="select_group_ul">
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_07"/>
+                                    <label for="f_group_07"> <a href="#"> 同学</a> </label>
+                                </li>
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_08"/>
+                                    <label for="f_group_08"> <a href="#"> 同学同学</a> </label>
+                                </li>
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_09"/>
+                                    <label for="f_group_09"> <a href="#">同学同学</a> </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="f_manager_img"><img src="../images/defaultUserImg50.jpg" alt="" /></div>
+                    <div class="f_manager_content">
+                        <p class="f_user_name">古天乐</p>
+                        <p class="f_address">上海，松江</p>
+                        <p class="f_systips hidden">好友请求等待确认中</p>
+                    </div>
+                    <div class="relievesrelation"> <img src="../images/relievesrelation_bg.png" alt="" /> </div>
+                    <a href="javascript:void(0)" class="fmcont_rerelation" title="解除关系"></a>
+                    <div class="f_select_group"> <a href="#" class="select_group"></a>
+                        <!--选择分组-->
+                        <div class="select_group_option hidden">
+                            <ul class="select_group_ul">
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_10"/>
+                                    <label for="f_group_10"> <a href="#"> 同学</a> </label>
+                                </li>
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_11"/>
+                                    <label for="f_group_11"> <a href="#"> 同学同学</a> </label>
+                                </li>
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_12"/>
+                                    <label for="f_group_12"> <a href="#">同学同学</a> </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="f_manager_img"><img src="../images/defaultUserImg50.jpg" alt="" /></div>
+                    <div class="f_manager_content">
+                        <p class="f_user_name">古天乐</p>
+                        <p class="f_address">上海，松江</p>
+                        <p class="f_systips hidden">好友请求等待确认中</p>
+                    </div>
+                    <div class="relievesrelation"> <img src="../images/relievesrelation_bg.png" alt="" /> </div>
+                    <a href="javascript:void(0)" class="fmcont_rerelation" title="解除关系"></a>
+                    <div class="f_select_group"> <a href="#" class="select_group"></a>
+                        <!--选择分组-->
+                        <div class="select_group_option hidden">
+                            <ul class="select_group_ul">
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_13"/>
+                                    <label for="f_group_13"> <a href="#"> 同学</a> </label>
+                                </li>
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_13"/>
+                                    <label for="f_group_13"> <a href="#"> 同学同学</a> </label>
+                                </li>
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_14"/>
+                                    <label for="f_group_14"> <a href="#">同学同学</a> </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="f_manager_img"><img src="../images/defaultUserImg50.jpg" alt="" /></div>
+                    <div class="f_manager_content">
+                        <p class="f_user_name">古天乐</p>
+                        <p class="f_address">上海，松江</p>
+                        <p class="f_systips hidden">好友请求等待确认中</p>
+                    </div>
+                    <div class="relievesrelation"> <img src="../images/relievesrelation_bg.png" alt="" /> </div>
+                    <a href="javascript:void(0)" class="fmcont_rerelation" title="解除关系"></a>
+                    <div class="f_select_group"> <a href="#" class="select_group"></a>
+                        <!--选择分组-->
+                        <div class="select_group_option hidden">
+                            <ul class="select_group_ul">
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_01"/>
+                                    <label for="f_group_01"> <a href="#"> 同学</a> </label>
+                                </li>
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_02"/>
+                                    <label for="f_group_02"> <a href="#"> 同学同学</a> </label>
+                                </li>
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_03"/>
+                                    <label for="f_group_03"> <a href="#">同学同学</a> </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="f_manager_img"><img src="../images/defaultUserImg50.jpg" alt="" /></div>
+                    <div class="f_manager_content">
+                        <p class="f_user_name">古天乐</p>
+                        <p class="f_address">上海，松江</p>
+                        <p class="f_systips hidden">好友请求等待确认中</p>
+                    </div>
+                    <div class="relievesrelation"> <img src="../images/relievesrelation_bg.png" alt="" /> </div>
+                    <a href="javascript:void(0)" class="fmcont_rerelation" title="解除关系"></a>
+                    <div class="f_select_group"> <a href="#" class="select_group"></a>
+                        <!--选择分组-->
+                        <div class="select_group_option hidden">
+                            <ul class="select_group_ul">
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_01"/>
+                                    <label for="f_group_01"> <a href="#"> 同学</a> </label>
+                                </li>
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_02"/>
+                                    <label for="f_group_02"> <a href="#"> 同学同学</a> </label>
+                                </li>
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_03"/>
+                                    <label for="f_group_03"> <a href="#">同学同学</a> </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="f_manager_img"><img src="../images/defaultUserImg50.jpg" alt="" /></div>
+                    <div class="f_manager_content">
+                        <p class="f_user_name">古天乐</p>
+                        <p class="f_address">上海，松江</p>
+                        <p class="f_systips hidden">好友请求等待确认中</p>
+                    </div>
+                    <div class="relievesrelation"> <img src="../images/relievesrelation_bg.png" alt="" /> </div>
+                    <a href="javascript:void(0)" class="fmcont_rerelation" title="解除关系"></a>
+                    <div class="f_select_group"> <a href="#" class="select_group"></a>
+                        <!--选择分组-->
+                        <div class="select_group_option hidden">
+                            <ul class="select_group_ul">
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_01"/>
+                                    <label for="f_group_01"> <a href="#"> 同学</a> </label>
+                                </li>
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_02"/>
+                                    <label for="f_group_02"> <a href="#"> 同学同学</a> </label>
+                                </li>
+                                <li>
+                                    <input name="" type="radio" value="" id="f_group_03"/>
+                                    <label for="f_group_03"> <a href="#">同学同学</a> </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+            <!-- 分页 -->
+            <div id="pagination" class="pagenation clearfix"> </div>
+        </div>
+        <!-- 管理好友右侧主题内容 end-->
+    </div>
+    <!--content end-->
+</div>
+<!--页面主体内容模块 end-->
+<div id="footer">&nbsp;</div>
+<!--取消好友请求 begin-->
+<div id="relieves_request" style=" display: none;">
+    <div class="popup_dialog">
+        <div class="dialog_title">取消发送给 古天乐 的好友请求？</div>
+        <div class="dialog_close">&times;</div>
+        <div class="dialog_content">
+            <div class="dialog_tip">
+                <p>你确定要取消发送给<strong>古天乐</strong>的好友请求？</p>
+            </div>
+        </div>
+        <div class="dialog_btn clearfix"><span class="dialog_rstbtn float_r ml_15">取消</span><span class="dialog_subbtn float_r " >确定</span></div>
+    </div>
+</div>
+<!--取消好友请求 end-->
+<!--解除好友关系 begin-->
+<div id="rel_relation" style="display: none;">
+    <div class="popup_dialog">
+        <div class="dialog_title">是否与 古天乐 解除好友关系?</div>
+        <div class="dialog_close">&times;</div>
+        <div class="dialog_content">
+            <div class="dialog_tip">
+                <p>你确定要解除与<strong>古天乐</strong>之间的好友关系？</p>
+            </div>
+        </div>
+        <div class="dialog_btn clearfix"><span class="dialog_rstbtn float_r ml_15">取消</span><span class="dialog_subbtn float_r " >确定</span></div>
+    </div>
+</div>
+<!--解除好友关系 end-->
+</body>
+</html>

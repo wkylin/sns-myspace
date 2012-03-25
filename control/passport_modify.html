@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>修改头像</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/skincss/main.css" media="all" id="skincss"/>
+<link rel="stylesheet" type="text/css" href="../css/header.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/footer.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/passport.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/loading.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/upload_avatar.css" media="all" />
+<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="../js/snav_tab.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+<!--头部通用主导航 begin-->
+<div class="header_nav">
+    <div id="logo"> <a href="http://www.banding.com.cn/" class="logo" title="半丁社区">半丁LOGO</a> </div>
+    <div class="header_navmenu" >
+        <form action="" id="top_search">
+            <input type="text" value="找人" class="top_sh_input"/>
+            <a href="#" class="top_search_btn" title="查询">查询</a>
+        </form>
+        <ul>
+            <li> <a href="#" class="exit" title="退出">退出</a> </li>
+            <li> <a href="#" class="skin" title="换肤">换肤</a> </li>
+            <li id="routeway"> <a href="#" class="routeway" title="通道">通道</a>
+                <div class="routeway_option" id="routeway_option">
+                    <p> <a href="#" title="游戏大厅">游戏大厅</a> </p>
+                    <p> <a href="#" title="充值中心">充值中心</a> </p>
+                    <p> <a href="#" title="联合运营">联合运营</a> </p>
+                    <p> <a href="#" title="客服中心">客服中心</a> </p>
+                </div>
+            </li>
+            <li> <a href="#" class="email_box" title="信箱">信箱</a> </li>
+            <li> <a href="#" class="invite" title="邀请">邀请</a> </li>
+            <li> <a href="#" class="my_space" title="我的空间">我的空间</a> </li>
+            <li> <a href="#" class="reg_name">wkylin</a> </li>
+        </ul>
+        <div class="emial_box_tips hidden"> <a href="#" class="pop_tips_close">&times;</a> <span class="arrow_tips">arrow</span>
+            <p class=" clearfix"><span class="float_l"><span class="tips_nums">email</span>系统通知知</span><a href="#" class="pop_tips_view">查看</a></p>
+        </div>
+        <div class="invite_tips hidden"> <a href="#" class="pop_tips_close">&times;</a> <span class="arrow_tips2">arrow</span>
+            <p class=" clearfix"><span class="float_l"><span class="tips_nums">invite</span>条系统通知</span><a href="#" class="pop_tips_view">查看</a></p>
+        </div>
+    </div>
+</div>
+<!--头部通用主导航 end-->
+<!--头部通用次导航 begin-->
+<ul class="sbunav_ul clearfix">
+    <li> <a href="myspace_blog.html" class="app_nav"><img src="../images/img_blog.png" width="34" height="34" alt="博客" /><span>博客</span></a></li>
+    <li> <a href="passport_basic.html" class="app_curnav"><img src="../images/img_pasport.png" width="34" height="34" alt="通行证" /><span>通行证</span></a></li>
+    <li> <a href="find_friend.html" class="app_nav"><img src="../images/img_friend.png" width="34" height="34" alt="好友" /><span>好友</span></a></li>
+    <li> <a href="self_webpage.html" class="app_nav"><img src="../images/img_selfweb.png" width="34" height="34" alt="个人主页" /><span>个人主页</span></a></li>
+    <li> <a href="#" class="app_nav"><img src="../images/img_camara.png" width="34" height="34" alt="相册" /><span>相册</span></a></li>
+</ul>
+<!--头部通用次导航 end-->
+<!--页面主体内容模块 begin 复杂部分-->
+<div class="layout_single">
+    <div class="secondnav">
+        <ul class="navbox">
+            <li><a href="passport_basic.html" class="snav">基本资料</a></li>
+            <li><a href="passport_modify.html" class="snav_current">修改头像</a></li>
+            <li><a href="passport_password.html" class="snav">通行证资料</a></li>
+            <li><a href="mail_certification.html" class="snav">邮箱认证</a></li>
+            <li><a href="passport_people.html" class="snav">防沉迷认证</a></li>
+        </ul>
+    </div>
+    <div class="topfont">
+        <p><a href="#">&gt;&gt;返回高级工具</a> </p>
+    </div>
+    <!--白色部分内容 begin-->
+    <div class="whitecontent clearfix">
+        <div class="unit_fp clearfix">
+            <ul class="photos">
+                <li><img src="../images/defaultUserImg180.jpg" /></li>
+                <li>
+                    <p class="tc_888">预览效果</p>
+                    <span class="tc_888">180*180像素</span></li>
+            </ul>
+            <ol class="sendfiles">
+                <form method="post" id="" name="">
+                    <li>
+                        <div class="up_fileBox">
+                            <input type="text" class=" float_l m_text" id="id1" onchange="document.getElementById('id2').value=this.value;"/>
+                            <div class="float_l mib_btn uploadInput"> <a href="#" class="submit_btn width_70 float_l">
+                                <input type="file" value="" name="" id="id2" onchange="document.getElementById('id1').value=this.value;"/>
+                                <span class="clr_333">挑选照片</span></a> </div>
+                            <input type="submit" value="保 存" class="submit_btn width_70 float_l"/>
+                        </div>
+                        <div class="clearit"></div>
+                        <p class="error_color" id=""><span class="tc_888 font_14">仅支持jpg、gif图片文件格式，且小于1M</span></p>
+                    </li>
+                    <li>
+                        <div class="save_tips hidden">
+                            <p class="save_loading float_l"><span class="loading_small">loading...</span> </p>
+                            <p class="saveing_tips"> 正在保存，请稍等！</p>
+                        </div>
+                        <div class="option_suf "><img src="../images/ok_img.gif" width="31" height="31" alt="" /><span >操作成功！</span></div>
+                    </li>
+                </form>
+            </ol>
+        </div>
+    </div>
+</div>
+<!--页面主体内容模块 end-->
+<div id="footer">&nbsp;</div>
+</body>
+</html>

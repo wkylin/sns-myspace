@@ -1,0 +1,3 @@
+.loading_small { background:url(../images/blue_small.gif)  no-repeat center center; height:22px; display:block; }
+.loading_big { background:url(../images/blue_large.gif) no-repeat center center; height:32px; display:block; }
+.loading_data{ background:url(../images/blue_large.gif) no-repeat left center; height:32px; display:block; line-height:32px; text-indent:40px; margin:10px auto; width:180px;}

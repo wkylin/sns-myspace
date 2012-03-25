@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>个人主页</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/skincss/main.css" media="all" id="skincss"/>
+<link rel="stylesheet" type="text/css" href="../css/header.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/footer.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/blog_reply.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/send_mblog.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/faces.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/self_webpage.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/pages.css" media="all" />
+<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+<!--头部通用主导航 begin-->
+<div class="header_nav">
+    <div id="logo"> <a href="http://www.banding.com.cn/" class="logo" title="半丁社区">半丁LOGO</a> </div>
+    <div class="header_navmenu" >
+        <form action="" id="top_search">
+            <input type="text" value="找人" class="top_sh_input"/>
+            <a href="#" class="top_search_btn" title="查询">查询</a>
+        </form>
+        <ul>
+            <li> <a href="#" class="exit" title="退出">退出</a> </li>
+            <li> <a href="#" class="skin" title="换肤">换肤</a> </li>
+            <li id="routeway"> <a href="#" class="routeway" title="通道">通道</a>
+                <div class="routeway_option" id="routeway_option">
+                    <p> <a href="#" title="游戏大厅">游戏大厅</a> </p>
+                    <p> <a href="#" title="充值中心">充值中心</a> </p>
+                    <p> <a href="#" title="联合运营">联合运营</a> </p>
+                    <p> <a href="#" title="客服中心">客服中心</a> </p>
+                </div>
+            </li>
+            <li> <a href="#" class="email_box" title="信箱">信箱</a> </li>
+            <li> <a href="#" class="invite" title="邀请">邀请</a> </li>
+            <li> <a href="#" class="my_space" title="我的空间">我的空间</a> </li>
+            <li> <a href="#" class="reg_name">wkylin</a> </li>
+        </ul>
+        <div class="emial_box_tips hidden"> <a href="#" class="pop_tips_close">&times;</a> <span class="arrow_tips">arrow</span>
+            <p class=" clearfix"><span class="float_l"><span class="tips_nums">email</span>系统通知知</span><a href="#" class="pop_tips_view">查看</a></p>
+        </div>
+        <div class="invite_tips hidden"> <a href="#" class="pop_tips_close">&times;</a> <span class="arrow_tips2">arrow</span>
+            <p class=" clearfix"><span class="float_l"><span class="tips_nums">invite</span>条系统通知</span><a href="#" class="pop_tips_view">查看</a></p>
+        </div>
+    </div>
+</div>
+<!--头部通用主导航 end-->
+<!--头部通用次导航 begin-->
+<ul class="sbunav_ul clearfix">
+    <li> <a href="myspace_blog.html" class="app_nav"><img src="../images/img_blog.png" width="34" height="34" alt="博客" /><span>博客</span></a></li>
+    <li> <a href="passport_basic.html" class="app_nav"><img src="../images/img_pasport.png" width="34" height="34" alt="通行证" /><span>通行证</span></a></li>
+    <li> <a href="find_friend.html" class="app_nav"><img src="../images/img_friend.png" width="34" height="34" alt="好友" /><span>好友</span></a></li>
+    <li> <a href="self_webpage.html" class="app_curnav"><img src="../images/img_selfweb.png" width="34" height="34" alt="个人主页" /><span>个人主页</span></a></li>
+    <li> <a href="#" class="app_nav"><img src="../images/img_camara.png" width="34" height="34" alt="相册" /><span>相册</span></a></li>
+</ul>
+<!--头部通用次导航 end-->
+<!--页面主体内容模块 begin 复杂部分-->
+<div class="layout_main clearfix">
+    <!--sidebar begin-->
+    <div class="sidebar">
+        <!-- 未登录 begin -->
+        <div class="login">
+            <h1>您未登录，不能查看资料</h1>
+            <input type="text" name="" id="" class="text_input" value="用户名"/>
+            <input type="password" name="" id="" class="text_input" value="密码"/>
+            <input type="button" value="登录" class="submit_btn width_50 float_l ml_15" />
+            <input type="button" value="忘记密码？" class="submit_btn width_70 mr_25" />
+            <div class="clear"></div>
+            <div class="register">
+                <p>还没有通行证？</p>
+                <input type="button" value="立即注册" class=" submit_btn width_90 " />
+            </div>
+        </div>
+        <div class="h_line">分隔线</div>
+        <!-- 未登录 end -->
+        <!-- 统计 begin-->
+        <div class="option_sidebar clearfix">
+            <h2> 统计</h2>
+            <ul class="swp_sum_ul clearfix">
+                <li><span class="swp_sum_title">勋章</span><br/>
+                    <span class="swp_sum_num">9999</span></li>
+                <li><span class="swp_sum_title">好友<br/>
+                    </span> <span class="swp_sum_num">9999</span></li>
+                <li><span class="swp_sum_title">微博<br/>
+                    </span> <span class="swp_sum_num">9999</span></li>
+            </ul>
+        </div>
+        <!-- 统计 end-->
+        <div class="h_line">
+            <!--<img src="../images/h_line.gif" alt="" width="200" height="2"/>-->
+        </div>
+        <!--好友 begin-->
+        <div class="option_sidebar clearfix ">
+            <h2>好友</h2>
+            <ul class="swp_friend_ul clearfix">
+                <li> <a href="#"><img src="../images/defaultUserImg50.jpg" alt="" width="50" height="50"/></a><a href="#" class="swp_username">1234567891</a></li>
+                <li> <a href="#"><img src="../images/defaultUserImg50.jpg" alt="" width="50" height="50"/></a><a href="#" class="swp_username">好好友好</a></li>
+                <li> <a href="#"><img src="../images/defaultUserImg50.jpg" alt="" width="50" height="50"/></a><a href="#" class="swp_username">好好友好友</a></li>
+                <li> <a href="#"><img src="../images/defaultUserImg50.jpg" alt="" width="50" height="50"/></a><a href="#" class="swp_username">好好友好友</a></li>
+                <li> <a href="#"><img src="../images/defaultUserImg50.jpg" alt="" width="50" height="50"/></a><a href="#" class="swp_username">好友</a></li>
+                <li> <a href="#"><img src="../images/defaultUserImg50.jpg" alt="" width="50" height="50"/></a><a href="#" class="swp_username">好友友</a></li>
+                <li> <a href="#"><img src="../images/defaultUserImg50.jpg" alt="" width="50" height="50"/></a><a href="#" class="swp_username">好友友</a></li>
+                <li> <a href="#"><img src="../images/defaultUserImg50.jpg" alt="" width="50" height="50"/></a><a href="#" class="swp_username">好友好友</a></li>
+                <li> <a href="#"><img src="../images/defaultUserImg50.jpg" alt="" width="50" height="50"/></a><a href="#" class="swp_username">好友好友</a></li>
+            </ul>
+            <a href="#" class="swp_more_friend">查看全部&gt;&gt;</a>
+            <!--好友 end-->
+        </div>
+    </div>
+    <!-- sidebar end -->
+    <!-- content bgegin -->
+    <div class="content">
+        <!-- 个人信息 bengin-->
+        <div class="swp_self_photo"><img src="../images/defaultUserImg180.jpg" width="180" height="180" alt="" /></div>
+        <div class="swp_self_info">
+            <p><span class="font_16 font_b">谢永辉</span><!--<span class="padding_l_20">@谢永辉</span>--></p>
+            <p><a href="#" class="swp_address">http://home.hiigame.com/xieyonghui</a></p>
+            <p><!--<span class="txt_clor_626262">等级：</span><a href="#" class="swp_grade">研究生</a> --><span class="txt_clor_626262">简介：男，18岁</span></p>
+            <p class="text_indent3 txt_clor_626262">上海市，卢湾区</p>
+             <p class="text_indent3 txt_clor_626262">学校信息：上海交大，工作单位：上海半丁</p>
+            <p class="text_indent3 txt_clor_626262">QQ:270917337，MSN:270917337</p>
+            <!--<div class="swp_grade clearfix">
+                <div class="sys_msg hidden">
+                    <p > 你还没有未获得任何功勋章！！ </p>
+                </div>
+                <ul class="clearfix ">
+                    <li><img src="../images/badge/badge_007.gif" alt=""/></li>
+                    <li><img src="../images/badge/badge_007.gif" alt=""/></li>
+                    <li><img src="../images/badge/badge_007.gif" alt=""/></li>
+                    <li><img src="../images/badge/badge_007.gif" alt=""/></li>
+                    <li><img src="../images/badge/badge_007.gif" alt=""/></li>
+                </ul>
+            </div>-->
+            <div class="swp_foption">
+                <!-- 添加为好友 -->
+                <input type="button" value="加为好友" class="submit_btn float_l width_70 mr_15" />
+                <!-- 发信 -->
+                <input type="button" value="发信" class="submit_btn float_l width_50"/>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!--解决父div不能自适应高度-->
+        <!-- 个人信息 end-->
+        <!--微博发表功能 begin-->
+        <div class="status_update">
+            <div class="update_title">有话要说</div>
+            <form action="#" method="post">
+                <div class="textarea_con">
+                    <textarea name="textarea" rows=" " cols=" " id="blog_textarea">有话要说</textarea>
+                </div>
+                <div class="up_option">
+                    <div class="up_type">
+                        <!--表情 begin-->
+                        <div class="publish_faces"><img src="../images/face_ico.gif" width="16" height="16" alt="表情" /> <span id="show_faces"><a href="javascript:void(0)">表情</a></span>
+                            <!--可以选择的表情 begin-->
+                            <div class="face_list hidden">
+                                <table class="face_listbox">
+                                    <tr>
+                                        <td class="top_l"></td>
+                                        <td class="top_c"></td>
+                                        <td class="top_r"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mid_l"></td>
+                                        <td class="mid_c"><div class="face_box clearfix">
+                                                <div class="face_item clearfix">
+                                                    <div class="face_arrow "> </div>
+                                                    <div class="face_close"> <a title="关闭" href="#" class="close"></a> </div>
+                                                    <div class="face_item_bg">
+                                                        <ul>
+                                                            <li> <a title="足球" value="[足球]" href="#"><img alt="足球" src="../images/faces/football.gif" /></a> </li>
+                                                            <li> <a title="哨子" value="[哨子]" href="#"><img alt="哨子" src="../images/faces/shao.gif" /></a> </li>
+                                                            <li> <a title="红牌" value="[红牌]" href="#"><img alt="红牌" src="../images/faces/redcard.gif" /></a> </li>
+                                                            <li> <a title="黄牌" value="[黄牌]" href="#"><img alt="黄牌" src="../images/faces/yellowcard.gif" /></a> </li>
+                                                            <li> <a title="哈哈" value="[哈哈]" href="#"><img alt="哈哈" src="../images/faces/laugh.gif" /></a> </li>
+                                                            <li> <a title="呵呵" value="[呵呵]" href="#"><img alt="呵呵" src="../images/faces/smile.gif" /></a> </li>
+                                                            <li> <a title="衰" value="[衰]" href="#"><img alt="衰" src="../images/faces/cry.gif" /></a> </li>
+                                                            <li> <a title="汗" value="[汗]" href="#"><img alt="汗" src="../images/faces/sweat.gif" /></a> </li>
+                                                            <li> <a title="爱你" value="[爱你]" href="#"><img alt="爱你" src="../images/faces/love.gif" /></a> </li>
+                                                            <li> <a title="嘻嘻" value="[嘻嘻]" href="#"><img alt="嘻嘻" src="../images/faces/tooth.gif" /></a> </li>
+                                                            <li> <a title="哼" value="[哼]" href="#"><img alt="哼" src="../images/faces/hate.gif" /></a> </li>
+                                                            <li> <a title="心" value="[心]" href="#"><img alt="心" src="../images/faces/heart.gif" /></a> </li>
+                                                            <li> <a title="晕" value="[晕]" href="#"><img alt="晕" src="../images/faces/dizzy.gif" /></a> </li>
+                                                            <li> <a title="怒" value="[怒]" href="#"><img alt="怒" src="../images/faces/angry.gif" /></a> </li>
+                                                            <li> <a title="蛋糕" value="[蛋糕]" href="#"><img alt="蛋糕" src="../images/faces/cake.gif" /></a> </li>
+                                                            <li> <a title="花" value="[花]" href="#"><img alt="花" src="../images/faces/flower.gif" /></a> </li>
+                                                            <li> <a title="抓狂" value="[抓狂]" href="#"><img alt="抓狂" src="../images/faces/crazy.gif" /></a> </li>
+                                                            <li> <a title="困" value="[困]" href="#"><img alt="困" src="../images/faces/sleepy.gif" /></a> </li>
+                                                            <li> <a title="干杯" value="[干杯]" href="#"><img alt="干杯" src="../images/faces/cheer.gif" /></a> </li>
+                                                            <li> <a title="太阳" value="[太阳]" href="#"><img alt="太阳" src="../images/faces/sun.gif" /></a> </li>
+                                                            <li> <a title="下雨" value="[下雨]" href="#"><img alt="下雨" src="../images/faces/rain.gif" /></a> </li>
+                                                            <li> <a title="泪" value="[泪]" href="#"><img alt="泪" src="../images/faces/sad.gif" /></a> </li>
+                                                            <li> <a title="月亮" value="[月亮]" href="#"><img alt="月亮" src="../images/faces/moon.gif" /></a> </li>
+                                                            <li> <a title="猪头" value="[猪头]" href="#"><img alt="猪头" src="../images/faces/pig.gif" /></a> </li>
+                                                            <li> <a title="蜡烛" value="[蜡烛]" href="#"><img alt="蜡烛" src="../images/faces/candle.gif" /></a> </li>
+                                                            <li> <a title="伤心" value="[伤心]" href="#"><img alt="伤心" src="../images/faces/unheart.gif" /></a> </li>
+                                                            <li> <a title="风扇" value="[风扇]" href="#"><img alt="风扇" src="../images/faces/fan.gif" /></a> </li>
+                                                            <li> <a title="冰棍" value="[冰棍]" href="#"><img alt="冰棍" src="../images/faces/ice.gif" /></a> </li>
+                                                            <li> <a title="西瓜" value="[西瓜]" href="#"><img alt="西瓜" src="../images/faces/watermelon.gif" /></a> </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div></td>
+                                        <td class="mid_r"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="btm_l"></td>
+                                        <td class="btm_c"></td>
+                                        <td class="btm_r"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--可以选择的表情 end-->
+                        </div>
+                        <!--表情 end-->
+                        <!--话题 bengin-->
+                        <div class="publish_topic"><img src="../images/topic_ico.png" width="16" height="16" alt="话题" /> <a href="javascript:void(0)">话题</a> </div>
+                        <!--话题 end-->
+                        <!--上传图片 begin-->
+                        <div class="publish_img "><img src="../images/picture_ico.png" width="16" height="16" alt="图片" /> <a href="#">
+                            <input type="file" name="" id="" size="1" class="select_img"/>
+                            图片</a><span class="img_loading hidden">正在上传...</span> <span class=""><a href="#" class="upload_img_name">dnewicon.png</a><a href="#" class="img_delete">&nbsp;&nbsp;&times;</a></span>
+                            <div class="review_img hidden"> <img src="../images/defaultUserImg50.jpg" alt="" /> </div>
+                        </div>
+                        <!--上传图片 end-->
+                        <!--字数提示 bengin-->
+                        <div class="publist_num_tip">
+                            <p> 还可以输入<span class="char_con">140</span>字 </p>
+                        </div>
+                        <a href="#" class="uploat_btn"></a>
+                        <!--字数提示 end-->
+                    </div>
+                    <!--微博发表功能 begin-->
+                </div>
+            </form>
+        </div>
+        <!--微博发表功能 end-->
+        <!-- 自个微博列表 begin -->
+        <div class="swp_top_option"><span class="font_14 font_n">谢永辉 ：与我一起随时随地分享生活的点滴。</span></div>
+        <div class="talk_cont">
+            <!-- 系统消息 begin-->
+            <div class="sys_msg">
+                <p>你还没有任何微博。发一条，让你的朋友知道你在做什么！</p>
+            </div>
+            <!-- 系统消息 end -->
+            <div class="msg_body clearfix">
+                <ol >
+                    <li >
+                        <div class="msg_cont">
+                            <div class="msg_txt"> <a href="#">谢永辉 :</a> 今天天气不错哦~~今天天气不错哦~~今天天气不今天天气不错哦~~今天天气不错哦~~今天天气不今天天气不错哦~~今天天气不错哦~~</div>
+                            <div class="msg_txt"> 与 <a href="#">兰俊</a> 成为了朋友</div>
+                            <div class="badge_img">
+                                <p>获得 <a href="#">新手勋章</a></p>
+                                <a href="#" class="float_l"><img src="../images/badge/badge_007.gif"  alt="" /></a>
+                                <div class="clear"></div>
+                                <!--解决高度不能自适应-->
+                            </div>
+                            <div class="msg_img">
+                                <p>分享图片</p>
+                                <a href="#" class="float_l"><img src="../images/new_game_03.gif"  alt="" /></a>
+                                <div class="clear"></div>
+                                <!--解决高度不能自适应-->
+                            </div>
+                            <div class="msg_img_game">
+                                <p>打开了游戏 <a href="#">寻秦</a></p>
+                                <a href="#" class="float_l"><img src="../images/new_game_03.gif"  alt="" /></a>
+                                <div class="msg_img_txt">
+                                    <p>《寻秦》是一款战争策略类型的网页游戏，可升级建筑、制造士兵、发展英雄、状大联盟、模拟战争等游戏行为。 </p>
+                                    <a href="#">我要玩</a> </div>
+                                <div class="clear"></div>
+                                <!--解决高度不能自适应-->
+                            </div>
+                            <div class="msg_reply" >
+                                <div class="msg_retxt"> <a href="#">谢永辉 :</a> 今天天气不错哦~~ </div>
+                                <div class="sub_link clearfix"> <span class="msg_status float_l">35秒前2010-06-08
+                                    22:43 <a href="#">查看转发(2)</a></span> </div>
+                            </div>
+                            <div class="sub_link">
+                                <div class="msg_status">
+                                    <p>今天 2010-06-08 22:43</p>
+                                </div>
+                                <div class="dilog_cont"> <a href="#">对话内容</a>
+                                    <div class="dilog_maincnt "> 对话内容对话内容对话内容对话内容对话内容对话内容对话内容对话内容对话内容对话内容对话内容 </div>
+                                </div>
+                                <div class="blog_option"> <span class="hidden"><a href="#" >转发</a>|<a href="#" >回复</a></span><span class="hidden"><a href="#" >删除</a></span> </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="msg_cont">
+                            <div class="msg_txt"> <a href="#">谢永辉 :</a> 今天天气不错哦~~今天天气不错哦~~今天天气不今天天气不错哦~~今天天气不错哦~~今天天气不今天天气不错哦~~今天天气不错哦~~</div>
+                            <div class="msg_txt"> 与 <a href="#">兰俊</a> 成为了朋友</div>
+                            <div class="badge_img">
+                                <p>获得 <a href="#">新手勋章</a></p>
+                                <a href="#" class="float_l"><img src="../images/badge/badge_007.gif"  alt="" /></a>
+                                <div class="clear"></div>
+                                <!--解决高度不能自适应-->
+                            </div>
+                            <div class="msg_img">
+                                <p>分享图片</p>
+                                <a href="#" class="float_l"><img src="../images/new_game_03.gif"  alt="" /></a>
+                                <div class="clear"></div>
+                                <!--解决高度不能自适应-->
+                            </div>
+                            <div class="msg_img_game">
+                                <p>打开了游戏 <a href="#">寻秦</a></p>
+                                <a href="#" class="float_l"><img src="../images/new_game_03.gif"  alt="" /></a>
+                                <div class="msg_img_txt">
+                                    <p>《寻秦》是一款战争策略类型的网页游戏，可升级建筑、制造士兵、发展英雄、状大联盟、模拟战争等游戏行为。 </p>
+                                    <a href="#">我要玩</a> </div>
+                                <div class="clear"></div>
+                                <!--解决高度不能自适应-->
+                            </div>
+                            <div class="msg_reply" >
+                                <div class="msg_retxt"> <a href="#">谢永辉 :</a> 今天天气不错哦~~ </div>
+                                <div class="sub_link clearfix"> <span class="msg_status float_l">35秒前2010-06-08
+                                    22:43 <a href="#">查看转发(2)</a></span> </div>
+                            </div>
+                            <div class="sub_link">
+                                <div class="msg_status">
+                                    <p>今天 2010-06-08 22:43</p>
+                                </div>
+                                <div class="dilog_cont"> <a href="#">对话内容</a>
+                                    <div class="dilog_maincnt "> 对话内容对话内容对话内容对话内容对话内容对话内容对话内容对话内容对话内容对话内容对话内容 </div>
+                                </div>
+                                <div class="blog_option"> <span><a href="#" >转发</a>|<a href="#" >回复</a></span><span class="hidden"><a href="#" >删除</a></span> </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="msg_cont">
+                            <div class="msg_txt"> <a href="#">谢永辉 :</a> 今天天气不错哦~~今天天气不错哦~~今天天气不今天天气不错哦~~今天天气不错哦~~今天天气不今天天气不错哦~~今天天气不错哦~~</div>
+                            <div class="msg_txt"> 与 <a href="#">兰俊</a> 成为了朋友</div>
+                            <div class="badge_img">
+                                <p>获得 <a href="#">新手勋章</a></p>
+                                <a href="#" class="float_l"><img src="../images/badge/badge_007.gif"  alt="" /></a>
+                                <div class="clear"></div>
+                                <!--解决高度不能自适应-->
+                            </div>
+                            <div class="msg_img">
+                                <p>分享图片</p>
+                                <a href="#" class="float_l"><img src="../images/new_game_03.gif"  alt="" /></a>
+                                <div class="clear"></div>
+                                <!--解决高度不能自适应-->
+                            </div>
+                            <div class="msg_img_game">
+                                <p>打开了游戏 <a href="#">寻秦</a></p>
+                                <a href="#" class="float_l"><img src="../images/new_game_03.gif"  alt="" /></a>
+                                <div class="msg_img_txt">
+                                    <p>《寻秦》是一款战争策略类型的网页游戏，可升级建筑、制造士兵、发展英雄、状大联盟、模拟战争等游戏行为。 </p>
+                                    <a href="#">我要玩</a> </div>
+                                <div class="clear"></div>
+                                <!--解决高度不能自适应-->
+                            </div>
+                            <div class="msg_reply" >
+                                <div class="msg_retxt"> <a href="#">谢永辉 :</a> 今天天气不错哦~~ </div>
+                                <div class="sub_link clearfix"> <span class="msg_status float_l">35秒前2010-06-08
+                                    22:43 <a href="#">查看转发(2)</a></span> </div>
+                            </div>
+                            <div class="sub_link">
+                                <div class="msg_status">
+                                    <p>35秒前2010-06-08 22:43</p>
+                                </div>
+                                <div class="dilog_cont hidden"> <a href="#">对话内容</a>
+                                    <div class="dilog_maincnt "> 对话内容对话内容对话内容对话内容对话内容对话内容对话内容对话内容对话内容对话内容对话内容 </div>
+                                </div>
+                                <div class="blog_option"> <span  class="hidden"><a href="#" >转发</a>|<a href="#" >回复</a></span><span><a href="#" >删除</a></span> </div>
+                            </div>
+                        </div>
+                        <div class="restore_box clearfix">
+                            <form action="">
+                                <p><span class="font_b">回复:</span><span>@谢永辉&nbsp;:</span>&nbsp;今天去玩什么游戏呢?有谁知道!</p>
+                                <div class="colse_rbox">&times;</div>
+                                <textarea name="" cols="" rows="">为啥要转发啊？说说呗~</textarea>
+                                <div class="forwardinfo clearfix">
+                                    <div class="font_box">
+                                        <p>还能输入<span class=" font_14">140</span>字</p>
+                                    </div>
+                                    <input type="submit" class=" submit_btn width_70 float_r" value="回复">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="sclew_box">
+                            <p>成功转发<span class="hidden">成功回复</span></p>
+                        </div>
+                    </li>
+                </ol>
+                <a href="#" class="more_btn">更 多</a> </div>
+        </div>
+        <!-- 自个微博列表 end-->
+        <!-- 所有好友列表 begin-->
+        <div class="swp_top_option"><span>共有 234 位好友</span><span class="hidden">你还没有好友，赶紧找你的好友吧！</span></div>
+        <div class="swp_friend_list" >
+            <ol>
+                <li class="clearfix">
+                    <div class="swp_friend_photo"><img src="../images/defaultUserImg50.jpg" alt="" /></div>
+                    <div class="swp_friend_content">
+                        <p class="swp_user_name">王见多</p>
+                        <p class="swp_simple_info">女，18岁，上海</p>
+                        <p class="swp_lasted_blog">微博：<span class="txt_clor_1855a2">保定德菲尔建筑材料有限公司自成立以来，一直致力于改善生活品质，促进人类健康不断开拓进取，现已逐步发展成为集多种新型管材制造销售及施工安装的综合性公司。</span></p>
+                        <p class="swp_blog_address"><a href="#">http://url.cn/2ViSbV</a></p>
+                    </div>
+                    <div class="swp_friend_option">
+                        <div > <a href="#" class="swp_fo_addf">加为好友</a> </div>
+                        <div class="hidden"> <a href="#" class="swp_fo_addedf">已是好友</a> </div>
+                        <div> <a href="#" class="swp_fo_email">发消息</a> </div>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="swp_friend_photo"><img src="../images/defaultUserImg50.jpg" alt="" /></div>
+                    <div class="swp_friend_content">
+                        <p class="swp_user_name">王见多</p>
+                        <p class="swp_simple_info">女，18岁，上海</p>
+                        <p class="swp_lasted_blog">微博：<span class="txt_clor_1855a2">保定德菲尔建筑材料有限公司自成立以来，一直致力于改善生活品质，促进人类健康不断开拓进取，现已逐步发展成为集多种新型管材制造销售及施工安装的综合性公司。</span></p>
+                        <p class="swp_blog_address"><a href="#">http://url.cn/2ViSbV</a></p>
+                    </div>
+                    <div class="swp_friend_option">
+                        <div class="hidden"> <a href="#" class="swp_fo_addf">加为好友</a> </div>
+                        <div > <a href="#" class="swp_fo_addedf">已是好友</a> </div>
+                        <div> <a href="#" class="swp_fo_email">发消息</a> </div>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="swp_friend_photo"><img src="../images/defaultUserImg50.jpg" alt="" /></div>
+                    <div class="swp_friend_content">
+                        <p class="swp_user_name">王见多</p>
+                        <p class="swp_simple_info">女，18岁，上海</p>
+                        <p class="swp_lasted_blog">微博：<span class="txt_clor_1855a2">保定</span></p>
+                        <p class="swp_blog_address"><a href="#">http://url.cn/2ViSbV</a></p>
+                    </div>
+                    <div class="swp_friend_option">
+                        <div class="hidden"> <a href="#" class="swp_fo_addf">加为好友</a> </div>
+                        <div> <a href="#" class="swp_fo_addedf">已是好友</a> </div>
+                        <div> <a href="#" class="swp_fo_email">发消息</a> </div>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="swp_friend_photo"><img src="../images/defaultUserImg50.jpg" alt="" /></div>
+                    <div class="swp_friend_content">
+                        <p class="swp_user_name">王见多</p>
+                        <p class="swp_simple_info">女，18岁，上海</p>
+                        <p class="swp_lasted_blog">微博：<span class="txt_clor_1855a2">保定德菲尔公司。</span></p>
+                        <p class="swp_blog_address"><a href="#">http://url.cn/2ViSbV</a></p>
+                    </div>
+                    <div class="swp_friend_option">
+                        <div > <a href="#" class="swp_fo_addf">加为好友</a> </div>
+                        <div class="hidden"> <a href="#" class="swp_fo_addedf">已是好友</a> </div>
+                        <div> <a href="#" class="swp_fo_email">发消息</a> </div>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="swp_friend_photo"><img src="../images/defaultUserImg50.jpg" alt="" /></div>
+                    <div class="swp_friend_content">
+                        <p class="swp_user_name">王见多</p>
+                        <p class="swp_simple_info">女，18岁，上海</p>
+                        <p class="swp_lasted_blog">微博：<span class="txt_clor_1855a2">保定德菲尔建筑材料有限公司自成立以来，一直致力于改善生活品质，促进人类健康不断开拓进取，现已逐步发展成为集多种新型管材制造销售及施工安装的综合性公司。</span></p>
+                        <p class="swp_blog_address"><a href="#">http://url.cn/2ViSbV</a></p>
+                    </div>
+                    <div class="swp_friend_option">
+                        <div class="hidden"> <a href="#" class="swp_fo_addf">加为好友</a> </div>
+                        <div> <a href="#" class="swp_fo_addedf">已是好友</a> </div>
+                        <div> <a href="#" class="swp_fo_email">发消息</a> </div>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+            </ol>
+            <div class="clear"></div>
+            <!--解决父div不能自适应高度-->
+            <div class="pages clearfix">
+                <div class="page_list"> <a href="#" class="current_page">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a>... <a href="#">7</a><a href="#">8</a> </div>
+                <div class="next_pre_page"> <a href="#" class="prepage_btn">上一页</a><a href="#" class="nextpage_btn">下一页</a> </div>
+            </div>
+        </div>
+        <!-- 所有好友列表 end-->
+    </div>
+</div>
+<!--页面主体内容模块 end 复杂部分-->
+<div id="footer">&nbsp;</div>
+</body>
+</html>

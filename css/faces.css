@@ -1,0 +1,29 @@
+@charset "utf-8";
+/********************************
+ * author: wkylin  
+ * time:  2010-07-               
+ * link:  270917337@qq.com
+ * info:  faces css
+ *******************************/
+/* 表情符号样式 */
+.face_list .face_listbox{width:370px;}
+.face_listbox .top_l { background:url(../images/faces/facebg_top_l.png) no-repeat; height:5px; width:5px;}
+.face_listbox .top_c { background:url(../images/faces/facebg_top_c.png) repeat-x; height:5px; }
+.face_listbox .top_r { background:url(../images/faces/facebg_top_r.png) repeat-y; width:5px; }
+.face_listbox .mid_l { background:url(../images/faces/facebg_top_c.png) repeat-y; width:5px; }
+.face_listbox .mid_c { background:#fff;}
+.face_listbox .mid_r { background:url(../images/faces/facebg_top_c.png) repeat-y; width:5px; }
+.face_listbox .btm_l { background:url(../images/faces/facebg_btm_c.png) no-repeat; height:5px; width:5px; }
+.face_listbox .btm_c { background:url(../images/faces/facebg_top_c.png) repeat-x; height:5px; }
+.face_listbox .btm_r { background:url(../images/faces/facebg_btm_r.png) no-repeat; height:5px; width:5px; }
+.face_listbox .face_box { border:1px solid #a0a0a0; }
+.face_item { padding:10px 10px 5px; position:relative; width:340px; }
+.face_item .face_arrow { background:url(../images/faces/indeximg.png) no-repeat -515px 0 transparent; height:8px; left:20px; overflow:hidden; position:absolute; top:-8px; width:16px; }
+.face_item .face_item_bg { width:330px; }
+.face_item .face_item_bg li { float:left; height:22px; padding:2px; width:22px;border:1px dashed #ddd; margin:0 5px 5px 0; cursor:pointer; line-height:22px; }
+.face_item .face_item_bg li:hover{border:1px dashed #999999;}
+.face_item .face_item_bg li a:link, .face_item .face_item_bg li a:visited { /*border:1px dashed #ddd;*/ display:block; height:26px; text-align:center; width:26px; line-height:26px; }
+.face_item .face_item_bg li a:hover { /*border:1px dashed #999999;*/ }
+.face_close a.close { background:url(../images/faces/sicon.gif) no-repeat  -18px 0 transparent; float:right; height:8px; overflow:hidden; width:7px; }
+.face_close a.close:hover { background:url(../images/faces/sicon.gif) no-repeat  -18px -8px transparent; }
+

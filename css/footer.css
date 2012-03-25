@@ -1,0 +1,16 @@
+@charset "utf-8";
+/********************************
+ * author: wkylin 
+ * time:  2010-07-               
+ * link:  270917337@qq.com
+ * info:  footer css
+ *******************************/
+
+.layout_footer {clear:both; width:100%;min-width:960px; background-color:#f7f7f7;}
+.layout_footer .footer {border-top:1px solid #dcdcdc; border-bottom:1px solid #dcdcdc; line-height:30px;}
+.layout_footer .friendship{width:800px; margin:0 auto; text-align:left;}
+.layout_footer .footer a { color:#0074a1; padding:0 4px; }
+.layout_footer .copy_right { background-color:#f0f0f0; text-align:center; height:60px; font-family:Arial; width:100%; min-width:960px;}
+.layout_footer .copy_right p { padding-top:10px; width:100%; }
+
+#footer{width:800px; height:20px; margin:5px auto;}

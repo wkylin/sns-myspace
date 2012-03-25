@@ -1,0 +1,88 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/********************************
+ * author: pray 
+ * time:  2010-08-14             
+ * link:  106475073@qq.com
+ * info:  passport.css
+ * testroot: ietester firefox chrome
+ *******************************/
+.save_loading { float:left; line-height:32px; text-align:center; text-indent:-9999em;width:80px;}
+.saveing_tips { float:left; line-height:32px; }
+.option_suf { padding-left:20px; width:200px; float:left; }
+.option_suf span { color:#0C6; padding-left:10px; }
+/*其余样式*/
+.unit_form { width:240px; height:20px; float:left; line-height:20px; }
+.unit_font { width:80px; height:20px; float:left; text-align:right; line-height:20px; }
+.unit_text { width:230px; height:16px; border:1px #ccc solid; line-height:20px; }
+/**************************************基本资料页面*********************************************************************/
+
+/*白色背景中间内容*/
+.formbox { width:726px; margin:0 auto; border-bottom:1px dashed #C9DED8; padding-left:10px; }
+.formbox ul.basebox { width:100%; padding-top:10px; }
+.formbox ul.basebox li { width:100%; height:40px; }
+/*姓名表单样式*/
+.basic_text { width:120px; height:16px; border:1px #ccc solid; line-height:16px; }
+.basic_s { width:90px; border:1px solid #ccc; height:20px; }
+.birthday_year{width:70px; height:23px; border:1px #ccc solid; line-height:16px;margin-right:5px; }
+.birthday_mon{width:40px; height:23px; border:1px #ccc solid; line-height:16px;margin-right:5px; }
+.birthday_day{width:40px; height:23px; border:1px #ccc solid; line-height:16px;margin-right:5px; }
+
+/*真实姓名*/
+.basic_realname { width:100%; line-height:25px; }
+.basic_realname label { width:80px; float:left; text-align:right; _margin-right:-3px; line-height:25px; }
+/*性别*/
+.basic_sex { line-height:25px; }
+.basic_sex label { text-align:right; width:80px; float:left; height:25px; }
+.basic_sex .rd { width:130px; float:left; }
+/*出生日期、所在地、家乡*/
+.basic_units {}
+.basic_units label { text-align:right; width:80px; float:left; height:25px; line-height:25px; }
+.basic_units .b_area { width:130px; float:left; text-align:left; }
+/*信息工作单位和学校信息和QQ和MSN*/ 
+.unit_sf { line-height:25px; text-align:right; }
+.unit_sf label { width:80px; float:left; _margin-right:-1px; height:22px; line-height:22px; }
+.unit_sf .sf_area { width:435px; float:left; text-align:left; _margin-right:2px; }
+.blackfont { height:20px; float:left; padding-left:5px; line-height:20px; }
+/*保存按钮*/
+.savebtn { width:565px; margin:0 auto; padding-top:10px; }
+/*QQ、MSN、学校信息和工作单位表单样式*/
+.basic_text2 { width:230px; height:16px; border:1px #ccc solid; line-height:16px; float:left; }
+/*********************************邮箱验证页面*****************************************/
+a.next_btn { display:block; width:68px; height:29px; background:url(../images/next_btn.gif) 0 0 no-repeat; }
+a.next_btn:hover { display:block; width:68px; height:29px; background:url(../images/next_btn.gif) 0 -29px no-repeat; }
+/********************************************邮箱认证页面**************************************************/
+/*白色背景中间内容*/
+.units_content { width:726px;margin:0 auto; position:relative; height:500px; }
+.units_bfonts {padding:10px 0 5px 0; }
+.units_bfonts ul li { float:left; padding:9px 0px 8px 8px; }
+.units_bfonts ul li a.font_number1 { margin-top:-2px; width:20px; height:18px; display:block; background:url(../images/123.gif) 1px 0 no-repeat; }
+.units_bfonts ul li a.font_number2 { margin-top:-2px; width:20px; height:18px; display:block; background:url(../images/123.gif) -19px 0 no-repeat; }
+.units_bfonts ul li a.font_number3 { margin-top:-2px; width:20px; height:18px; display:block; background:url(../images/123.gif) -37px 0 no-repeat; }
+.units_bfonts ul li .input_boxs { width:165px; height:25px; margin-top:-4px; }
+.input_boxs input { border:1px #ccc solid; height:17px; line-height:17px; width:160px; color:#333; }
+.input_boxs input.email_input { border:1px #ccc solid; height:17px; line-height:17px; width:160px; color:#333; background:#eee; }
+/*修改认证邮箱*/
+.m_confirm { padding:20px 0; width:500px; margin:0 auto;position:relative; height:500px;}
+.m_confirm ul li.c_photos { float:left; }
+.m_confirm ul li.c_photos img { padding:1px; border:0 none; }
+.m_confirm ul li.c_words { float:left; margin-bottom:20px; }
+.m_confirm ul li.c_words p { padding:2px 10px; line-height:22px; letter-spacing:1px; word-break:break-all; }
+.units_content .bfonts { width:493px; margin:0 auto; }
+.bfonts p { line-height:20px; }
+.email_info {width:620px; margin:0 auto;}
+.modify_email_btn{position:absolute; left:95px; top:80px;}
+/*登录邮箱按钮*/
+.email_info .mail_box { height:29px; float:left;margin-top:20px; width:100px;}
+/******************************通行证密码页面************************************************************/
+/*白色背景中间内容*/
+.form_password {width:726px; margin:0 auto; height:500px;}
+.form_password ul.pw { padding-top:10px; }
+.form_password ul.pw li { line-height:30px; height:40px; }
+/*****************************************防沉迷认证页面**********************************************/
+/*白色背景中间内容*/
+.form_passport { width:726px; margin:0 auto; height:500px; }
+.form_passport ul.pw { width:726px; padding-top:20px; margin:0 auto; }
+.form_passport ul.pw li { width:726px; line-height:40px; height:40px; }
+/*保存文字*/
+.p_fonts { float:left; text-align:left; height:20px; line-height:20px; }

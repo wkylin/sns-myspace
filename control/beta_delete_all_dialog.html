@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>删除操作</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/skincss/main.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/appear_css/popup_dialog_wrap.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/appear_css/popup_dialog_cont.css" media="all" />
+<script type="text/javascript" src="../js/jquery-1.4.4.js"></script>
+<script type="text/javascript">
+	$(function(){
+			   var dialog_w=$(".dialog_tip").width();
+			   $(".popup_dialog").width(dialog_w);
+			   });
+</script>
+
+</head>
+<body style=" background:#fff; margin:30px auto;">
+<div class="popup_dialog">
+    <div class="dialog_title">删除操作</div>
+    <div class="dialog_close">&times;</div>
+    <div class="dialog_content">
+        <div class="dialog_tip">
+            <p>确定要删除这<span class="red">8</span>项内容吗？删除后不可恢复！</p>
+        </div>
+    </div>
+    <div class="dialog_btn clearfix"><input type="button" value="取消" class="dialog_rstbtn float_r ml_15" /><input type="button" value="确定"class="dialog_subbtn float_r " /></div>
+</div>
+</body>
+</html>

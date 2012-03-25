@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+/********************************
+ * author: wkylin,pray 
+ * time:  2010-08-               
+ * link:  270917337@qq.com
+ * info:  e_mail.css
+ *******************************/
+/* 信件主题内容样式 */
+.email_left { float:left; width:360px; margin:20px 0 0 15px; display:inline; text-align:left; }
+.email_right { float:left; margin:20px 0 0 0; display:inline; text-align:left; }
+.email_rlay { background:#fff; width:390px; padding:10px 10px 0 10px; _padding:10px 5px 0 10px;height:550px; }
+.email_option { padding:10px 5px 0 10px; clear:both; height:38px; border-bottom:1px solid #999; }
+.email_option a { color:#333; }
+.email_option a.email_dele_all { float:right; display:block; height:29px; line-height:29px; color:#005ca1; }
+.email_list { width:363px; color:#000; }
+.email_list ul li { height:48px; background:none; border-bottom:1px solid #999; }
+.email_list ul li.li_current { width:363px; height:48px; background:#fff; }/* 当前激活样式 */
+.send_email_user, .recive_email_user, .email_conent, .email_dele { display:inline; float:left; }
+.email_dilog_title { width:210px; text-overflow:ellipsis; overflow:hidden; height:20px; }
+.email_dilog_title a { color:#005ca1; }
+.send_email_user { margin:8px 5px 0 10px; }
+.recive_email_user { margin:8px 0 0 0; }
+.send_to_recive { display:inline; float:left; background:url(../images/to.png) center center no-repeat; width:30px; height:47px; text-indent:-9999em; }
+.email_conent { width:210px; margin:5px 0 0 5px; height:30px; line-height:20px; }
+.email_dele { margin-top:28px; }
+.email_dele a { color:#005ca1; }
+.email_noread { color:#42b057; }
+.txt_color_898989 { color:#898989; }
+.sys_msg { background:#ffc; width:100%; margin:0 auto; height:30px; line-height:30px; text-align:center; }/* 系统提示消息 */
+.sys_msg2 { background:#ffc; height:30px; line-height:30px; text-align:center; width:330px; margin:10px auto 0; }
+/* 信件对话区 */
+.email_rlay .email_dilog_list { width:400px; height:335px; border-bottom:1px solid #c9ded8; border-top:1px solid #c9ded8; margin:5px 0 10px; padding:5px 0; overflow-y:scroll }
+.email_dilog_tilte a { color:#005ca1; }
+.email_dilog_list ul li { padding-top:10px; line-height:18px; }
+.email_dilog_photo { float:left; margin:0 5px 0 0; width:30px; height:30px; }
+.email_dilog_cont { float:left; width:340px; }
+.email_dilog_cont a { color:#005ca1; }
+.email_write { padding:10px 0 0 0; clear:both; }
+.email_self_photo { float:left; margin-right:8px; }
+.email_self_photo img { padding:1px; background:#fff; border:1px solid #ccc; }
+.email_textarea { float:left; width:320px; height:54px; }
+.email_textarea textarea { width:313px; height:50px; background:none; border:1px solid #D0D0D0; overflow:hidden; }
+.email_tips, .remain_txt, .email_send_btn { float:left; margin:10px 0 10px 0; height:28px; line-height:28px; }
+.email_tips { width:200px; }
+.remain_txt { width:120px; }
+.txt_a2a1a1 { color:#a2a1a1 }
+/*好友接受列表*/
+.my_friends { width:200px; padding-left:20px; }
+.my_friends ul li { line-height:30px; height:30px; }
+/* 写信样式 */
+.e_friend_option { margin-top:5px; }
+.e_friend_option select { width:100px; padding:1px; border:1px solid #aaa; }
+.e_friend_list { width:335px; overflow:hidden; margin:20px 0 20px 0px;  margin:0 auto;}
+.e_friend_list ul.e_friend_ul { padding-top:5px; width:350px; margin:0 auto;}
+.e_friend_list ul.e_friend_ul li { float:left; margin:0 7px 0 0; text-align:center; width:60px; height:75px;}
+.e_friend_list ul.e_friend_ul li img { vertical-align:top; display:block; margin:0 auto; padding:1px; border:1px solid #ccc; }
+.e_friend_list ul.e_friend_ul li a.e_username, a.e_username:hover { margin-top:3px; display:block; text-decoration:none; color:#1855a2; word-wrap:break-word; word-break:break-all; line-height:12px; }
+.e_friend_select { padding:0 0 5px 0; border-bottom:1px solid #c9ded8; }
+.e_friend_select p { line-height:30px; }
+.e_friend_write { height:300px; }
+/* 写信--选择好友 */
+ul.emailed_friend { padding-left:10px; margin:0 auto 0; overflow:hidden;}
+ul.emailed_friend li { float:left; width:65px; }
+ul.emailed_friend li a{ line-height:20px;}
+ul.emailed_friend li img { display:block; float:left; margin: 0 5px 5px 0; padding:1px; border:1px solid #ccc; }
+a.dele_selected, a.dele_selected:hover { float:left; display:block; width:19px; height:19px; }
+a.dele_selected { background:url(../images/dele_selected_bg.gif) no-repeat 0 -19px; }
+a.dele_selected:hover { background:url(../images/dele_selected_bg.gif) no-repeat 0 0; }
+.e_write_area { margin-top:15px; }
+.e_write_bg { width:380px; height:70px; margin-top:5px; }
+.e_write_bg textarea { width:375px; height:50px; background:none; border:1px solid #D0D0D0; overflow:hidden; padding:6px; color:#a2a1a1; }
+/* 信箱请求 begin*/
+
+/*全部接受和全部忽略 删除全部通知按钮*/
+.btnbox { position:absolute; right:5px; top:5px; }
+.btnbox ul.btns li { float:right; margin-left:10px; display:inline; width:90px; }
+/*人物姓名和文字*/
+ .m_units_boxs { width:746px; margin:0 auto; padding:10px 0; border-bottom:1px dashed #C9DED8; }
+.m_units_boxs .m_units_top { height:20px; padding-top:10px; }
+.m_units_boxs .m_units_top_f { float:left; font-weight:bold; }
+.m_units_boxs .m_units_top_r { float:right; }
+.m_units_boxs a.dele_note, a.dele_note:hover { text-decoration:underline; }
+.m_units_boxs ul li { /*margin-bottom:10px;*/ clear:both;}
+.e_date_time, .e_user_name, .e_sysinfo, .e_sysinfo .msg_img_txt { float:left; line-height:23px; }
+.e_date_time, .e_user_name { margin:0 5px 0 0;}
+.e_sysinfo, .msg_img_info { /*width:620px;*/ }
+.msg_img_info { }
+.e_sysinfo .msg_img_txt { float:left; padding-left:10px; width:410px; }
+.e_sysinfo .msg_img_txt p { text-indent:2em; line-height:23px; }
+/*翻页效果*/
+.e_manage_pages { padding:20px 0 0 0; }
+.e_manage_pages a.e_prepage_btn, a.e_prepage_btn:hover { width:71px; height:29px; display:block; float:left; margin-left:300px; _margin-left:150px; }
+.e_manage_pages a.e_prepage_btn { background:url(../images/next_pre_page_btn.gif) no-repeat 0 0; }
+.e_manage_pages a.e_prepage_btn:hover { background:url(../images/next_pre_page_btn.gif) no-repeat 0 -29px; }
+.e_manage_pages a.e_nextpage_btn, a.e_nextpage_btn:hover { width:71px; height:29px; display:block; float:left; }
+.e_manage_pages a.e_nextpage_btn { background:url(../images/next_pre_page_btn.gif) no-repeat -71px 0; }
+.e_manage_pages a.e_nextpage_btn:hover { background:url(../images/next_pre_page_btn.gif) no-repeat -71px -29px; }
+/* 信箱请求 end */
+/* 信箱通知 begin */
+
+/*人物和图片*/
+ .unit_fp { width:746px; margin:0 auto; padding:10px 0; border-bottom:1px dashed #C9DED8; position:relative; overflow:hidden; }
+/*人物和图片左边部分*/
+.unit_fp ul.units_left { width:640px; border-right:1px #c9ded8 solid; float:left; position:relative; margin-left:20px; display:inline; }
+.unit_fp ul.units_left li { float:left; }
+.unit_fp ul.units_left li img { border:1px #ccc solid; padding:2px; float:left; margin-right:10px; }
+.unit_fp ul.units_left li .names { float:left; padding-top:3px; width:570px; }
+.unit_fp ul.units_left li .names p { line-height:20px; }
+.unit_fp ul.units_left li.date { position:absolute; top:0; right:5px; }
+/* 人物和图片右边部分*/
+.unit_fp ol.units_right { float:left; text-align:left; padding-left:30px; }
+.unit_fp ol.units_right p { line-height:20px; }
+.unit_fp ol.units_right p a { color:#004e98; text-decoration:underline; }
+.unit_fp ol.units_right p a:hover { text-decoration:underline; }

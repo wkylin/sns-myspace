@@ -1,0 +1,79 @@
+@charset "utf-8";
+/********************************
+ * author: wkylin 
+ * time:  2010-07-               
+ * link:  270917337@qq.com
+ * info:  self_webpage css
+ *******************************/
+ /* 登录 */
+.login { text-align:center; padding:10px 0 5px; color:#000; }
+.login h1 { font-size:14px;font-weight:bold; line-height:23px; }
+.login input.text_input { color:#767676; width:158px; height:20px; line-height:20px; padding:5px 2px 2px 5px; border:1px solid #ccc; margin:5px auto 8px; _margin:5px auto; *margin:5px auto;display:block; }
+.login .forget_pswd { display:block; float:left; height:29px; line-height:29px; margin-left:20px;}
+.register { color:#000; line-height:23px; margin:10px 0 0 0; }
+
+ /* 右边部分 */
+.option_sidebar ul.swp_sum_ul { width:174px; height:56px; margin:0 0 0 8px; }
+.option_sidebar ul.swp_sum_ul li { float:left; width:58px; padding-top:5px; line-height:23px; text-align:center; display:inline; }
+.txt_clor_455a6b { color:#455a6b; }
+.txt_clor_588ccb { color:#588ccb; }
+.txt_clor_626262 { color:#626262; }
+.txt_clor_1855a2 { color:#1855a2; }
+.option_sidebar ul.swp_friend_ul li { float:left; padding:0 0 0 5px;display:inline;text-align:center;width:60px;height:90px; }
+.swp_option_sidebar ul.swp_friend_ul li img { border:1px solid #67b8d6; padding:1px; vertical-align:top; background:#fff; display:block; }
+ul.swp_friend_ul li img{border:1px solid #aaa; padding:2px; background:#fff;}
+/*.option_sidebar ul.swp_friend_ul li a.swp_username, a.swp_username:hover { padding-top:5px; display:block; text-decoration:none; color:#2b4a78; }
+.option_sidebar a.swp_more_friend, a.swp_more_friend:hover { padding:15px 0 0 10px; text-decoration:underline; color:#2b4a78; display:block; }*/
+/* 左边部分 */
+/* 个人信息 */
+.swp_self_photo {background:url(../images/swp_userphoto_bg.gif) no-repeat 0 0; width:180px; height:180px; padding:7px; text-align:center; float:left; display:inline; margin:10px 0 0 10px; }
+.swp_self_info { float:left; padding: 5px 0 0 15px; display:inline; color:#000; line-height:20px; width:365px;margin:10px 0 0 0;position:relative; }
+.padding_l_20 { padding-left:20px; }
+.swp_self_info a.swp_address { color:#1855a2; }
+.swp_self_info a.swp_grade { color:#1855a2; text-decoration:underline; padding-right:20px; }
+.swp_self_info .swp_grade { clear:both; height:100%; }
+.swp_self_info .swp_grade ul li { float:left; padding:5px 6px 0 0; }
+.swp_foption{/*position:absolute; left:10px;top:165px;*/ margin-top:10px;}
+.swp_self_info a.swp_addfrid, a.swp_addfrid:hover, a.swp_send_email, a.swp_send_email:hover { margin-top:10px; display:block; width:71px; height:29px; float:left; }
+.swp_self_info a.swp_addfrid { background:url(../images/swp_af_se_bg.gif) no-repeat 0 0; }
+.swp_self_info a.swp_addfrid:hover { background:url(../images/swp_af_se_bg.gif) no-repeat 0 -29px; }
+.swp_self_info a.swp_send_email { background:url(../images/swp_af_se_bg.gif) no-repeat -71px 0; }
+.swp_self_info a.swp_send_email:hover { background:url(../images/swp_af_se_bg.gif) no-repeat -71px -29px; }
+/* 有话要说列表 */
+.talk_cont { clear:both; margin:10px 0 20px 0; padding:0 10px; }
+.talk_cont ol li { border-bottom:1px dashed #C9DED8; padding:10px 0px; width:100%; }
+.talk_cont ol li a { color:#1855a2; }
+.talk_cont .newsbox { background:none repeat scroll 0 0 #fffeec; color:#2B2B2B; cursor:pointer; line-height:24px; padding:4px 0; text-align:center; }
+.talk_cont .msg_cont .retop_option { width:54px; height:54px; text-align:center; color:#365a6d; background:url(../images/retop_option_bg.gif) no-repeat 0 0; float:left; margin:2px 0 0 -60px; line-height:25px; }
+.talk_cont .msg_txt, .msg_img,.msg_img_game,.badge_img  { color:#535353; font-size:12px; word-wrap:break-word; line-height:23px;  margin-bottom:5px 0 0 0; padding-left:5px;}
+.talk_cont .msg_img img { cursor:url(../images/zoomin.cur), pointer; border:0 none; }
+.talk_cont .msg_img_game img,.talk_cont .msg_img img { border:1px solid #ccc; padding:2px; background:#fff; }
+.talk_cont .msg_img_txt { float:left; padding-left:10px; width:375px; }
+.talk_cont .msg_img_txt p { text-indent:2em; }
+.talk_cont .msg_img_txt a { display:block; margin-top:10px; }
+.talk_cont .msg_reply { background:#fff;  border:1px solid #dcdcdc;padding-left:5px; margin:5px 0 0 5px; }
+.talk_cont .msg_reply .msg_retxt { color:#535353; font-size:12px; line-height:23px; }
+.talk_cont .sub_link { color:#999; margin:5px 0 0 0;padding-left:5px; word-wrap:break-word; height:21px; line-height:21px; }
+.talk_cont .sub_link .blog_option { float:right; }
+.talk_cont .sub_link .blog_option a { padding:0 5px; text-decoration:underline; }
+.talk_cont .msg_status { overflow:hidden; float:left; }
+.talk_cont .dilog_cont { margin-left:10px; position:relative; float:left; }
+.talk_cont .dilog_cont .dilog_maincnt { background:#fff; padding:5px 0 5px 10px; border:1px solid #dcdcdc; width:565px; position:absolute; top:20px; left:-136px; }
+/* 所有好友 */
+.swp_friend_list { padding:0 10px 20px 10px; color:#535353; }
+.swp_friend_list ol li { padding:10px 5px; border-bottom:1px dashed #C9DED8; }
+.swp_friend_photo { float:left; margin-right:10px; }
+.swp_friend_photo img { padding:1px; border:1px solid #ccc; _margin-top:5px; margin-top:3px; background:#fff; }
+.swp_friend_content { color:#535353; float:left; width:410px; line-height:20px; }
+.swp_user_name { font-weight:bold; color:#000; }
+.swp_simple_info { }
+.swp_lasted_blog { }
+.swp_blog_address a{color:#1855A2; }
+.swp_friend_option { float:right; margin:5px 5px 0 0; }
+.swp_friend_option a.swp_fo_addf, a.swp_fo_addedf, a.swp_fo_email { display:block; width:78px; height:24px; text-indent:-9999em; }
+.swp_friend_option a.swp_fo_addf { background:url(../images/swp_all_friend_btn.gif) no-repeat 0 0; }
+.swp_friend_option a.swp_fo_addf:hover { background:url(../images/swp_all_friend_btn.gif) no-repeat 0 -45px; }
+.swp_friend_option a.swp_fo_addedf { background:url(../images/swp_all_friend_btn.gif) no-repeat 0 -88px; }
+.swp_friend_option a.swp_fo_email { background:url(../images/swp_all_friend_btn.gif) no-repeat 0 -23px; }
+.swp_friend_option a.swp_fo_email:hover { background:url(../images/swp_all_friend_btn.gif) no-repeat 0 -68px; }
+

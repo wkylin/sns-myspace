@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+.restore_box{padding:0 5px; width:563px;z-index:9999em;border:1px solid #DCDCDC;background-color:#F8F8F8; position:relative; margin:5px 0 0 2px;}
+.restore_box p{ line-height:20px; margin:6px; letter-spacing:1px;}
+.restore_box p img{border:0 none;}
+.restore_box p a{color:#1855A2;}
+.restore_box .colse_rbox,.colse_rbox:hover{font-size:14px;font-weight:bold; position:absolute; top:5px; right:0; cursor:pointer; }
+.restore_box .colse_rbox,.colse_rbox:hover{color:#1855a2;}
+.restore_box textarea{ width:557px; height:40px; color:#a2a1a1; overflow:auto; margin:0 auto; border:1px solid #DCDCDC;}
+.restore_box .forwardinfo{ float:right; padding:5px 0 0 0;width:240px;}
+.restore_box .forwardinfo p{ line-height:22px;}
+.restore_box .forwardinfo .font_box{ float:left;}
+.sclew_box{ height:30px; background-color:#fff;border:1px solid #DCDCDC; width:573px; text-align:center; margin:10px 0 0 2px;}
+.sclew_box p{ line-height:30px; font-size:14px; color:#0C6; font-weight:bold;}
+
+

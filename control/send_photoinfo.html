@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>用户上传图片</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/skincss/main.css" media="all" id="skincss"/>
+<link rel="stylesheet" type="text/css" href="../css/header.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/footer.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/my_spaces.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/upload_avatar.css" />
+<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="../js/snav_tab.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+<div class="header_nav">
+    <div id="logo"> <a href="http://www.banding.com.cn/" class="logo" title="半丁社区">半丁LOGO</a> </div>
+    <div class="header_navmenu" >
+        <ul>
+            <li> <a href="#" class="exit" title="退出">退出</a> </li>
+            <li id="routeway"> <a href="#" class="routeway" title="通道">通道</a>
+                <div class="routeway_option" id="routeway_option">
+                    <p> <a href="#" title="游戏大厅">游戏大厅</a> </p>
+                    <p> <a href="#" title="充值中心">充值中心</a> </p>
+                    <p> <a href="#" title="联合运营">联合运营</a> </p>
+                    <p> <a href="#" title="客服中心">客服中心</a> </p>
+                </div>
+            </li>
+            <li> <a href="#" class="my_space" title="我的空间">我的空间</a> </li>
+        </ul>
+        <div class="emial_box_tips hidden"> <a href="#" class="pop_tips_close">&times;</a> <span class="arrow_tips">arrow</span>
+            <p class=" clearfix"><span class="float_l"><span class="tips_nums">email</span>系统通知知</span><a href="#" class="pop_tips_view">查看</a></p>
+        </div>
+        <div class="invite_tips hidden"> <a href="#" class="pop_tips_close">&times;</a> <span class="arrow_tips2">arrow</span>
+            <p class=" clearfix"><span class="float_l"><span class="tips_nums">invite</span>条系统通知</span><a href="#" class="pop_tips_view">查看</a></p>
+        </div>
+    </div>
+</div>
+<div class="layout_single clearfix">
+    <div class="topfont">
+        <p><img src="../images/bandingf.png" width="43" height="43" class="bandingf" alt="add friends"/><span class="font_14"><strong>上传图片</strong></span></p>
+    </div>
+    <div class="whitecontent clearfix">
+        <div class="fontinfo clearfix">
+            <ul>
+                <li> <img src="../images/imagefont.png" alt="" /> </li>
+                <li>
+                    <p>对方希望看到您的模样，请挑选一张照片作为头像</p>
+                </li>
+            </ul>
+        </div>
+        <div class="unit_fp clearfix">
+            <ul class="photos">
+                <li><img src="../images/defaultUserImg180.jpg" /></li>
+                <li>
+                    <p class="tc_888">预览效果</p>
+                    <span class="tc_888">180*180像素</span></li>
+            </ul>
+            <ol class="sendfiles clearfix">
+                <form method="post" id="" name="">
+                    <li>
+                        <div class="up_fileBox clearfix">
+                            <input type="text" class=" float_l m_text" id="id1" onchange="document.getElementById('id2').value=this.value;"/>
+                             <div class="float_l mib_btn uploadInput"> 
+                            <a href="#" class="submit_btn float_l width_70 mib_btn uploadInput">
+                            <input type="file" value="" name="" id="id2" onchange="document.getElementById('id1').value=this.value;"/>
+                            <span class="clr_333">
+                            挑选照片
+                            </span>
+                            </a>
+                            </div>
+                            <input type="submit"  value="保存" class="submit_btn width_70 float_l"/>
+                        </div>
+                        <div class="clearit"></div>
+                        <p class="error_color clearfix" id=""><span class="tc_888 font_14">仅支持jpg、gif图片文件格式，且小于1M</span> 
+                    </li>
+                </form>
+                <a href="#" class="jump_over">跳过&gt;&gt;</a>
+            </ol>
+        </div>
+    </div>
+</div>
+<!--页面主体内容模块 end-->
+<div id="footer">&nbsp;</div>
+</body>
+</html>

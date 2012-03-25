@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>加为好友</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/skincss/main.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/appear_css/popup_dialog_cont.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/appear_css/popup_dialog_wrap.css" media="all" />
+<script type="text/javascript" src="../js/jquery-1.4.4.js"></script>
+<script type="text/javascript" src="../js/maxlength.js"></script>
+<script type="text/javascript">
+	$(function(){
+		   var dialog_w=$(".addf_dialog").width();
+		   $(".popup_dialog").width(dialog_w);
+		   $("#addf_textarea").focus(function(){
+					$(this).css("border", "1px solid #a0a0a0");
+			}).blur(function(){
+					$(this).css("border", "1px solid #d0d0d0");
+			});
+		    //字符统计
+			
+			 $("#addf_textarea").maxlength({
+				'feedback': '.font_num',
+				'useInput': true
+			});
+		});
+</script>
+</head>
+<body style=" background:#fff; margin:30px auto;">
+<div class="popup_dialog">
+    <form method="post" name="" id="">
+        <div class="dialog_title">将 崔刚建 加为好友吗？</div>
+        <div class="dialog_close">&times;</div>
+        <div class="dialog_content">
+            <div class="addf_dialog">
+                <ul>
+                    <li><img src="../images/defaultUserImg50.jpg" /></li>
+                    <li class="swap">
+                        <p>附加个人信息有利于请求通过哦:)</p>
+                        <textarea name="ta" cols="" rows="" class="addf_textarea" id="addf_textarea"></textarea>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="dialog_btn clearfix"> <input type="button" value="取消" class="dialog_rstbtn float_r ml_15" /> <input type="button" class="dialog_subbtn float_r" value="发送请求" /> <span class="letter_num"> <span>还能输入<span class="font_num">140</span>个字！</span>
+            <input type="hidden" value="140" name="maxlength"/>
+            </span> </div>
+    </form>
+</div>
+</body>
+</html>

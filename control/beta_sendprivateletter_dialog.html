@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>发送私信</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/skincss/main.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/skincss/main.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/appear_css/popup_dialog_wrap.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/appear_css/popup_dialog_cont.css" media="all" />
+<script type="text/javascript" src="../js/jquery-1.4.4.js"></script>
+<script type="text/javascript" src="../js/maxlength.js"></script>
+<script type="text/javascript">
+	$(function(){
+			   var dialog_w=$(".sendletter").width();
+			   $(".popup_dialog").width(dialog_w);
+			    $("#sl_texarea").focus(function(){
+					$(this).css("border", "1px solid #a0a0a0");
+					}).blur(function(){
+							$(this).css("border", "1px solid #d0d0d0");
+					});
+				 //字符统计
+				 $("#sl_texarea").maxlength({
+					'feedback': '.font_num',
+					'useInput': true
+				});
+			   });
+</script>
+</head>
+<body style=" background:#fff; margin:30px auto;">
+<div class="popup_dialog">
+    <form method="post" name="" id="">
+        <div class="dialog_title">发私信</div>
+        <div class="dialog_close">&times;</div>
+        <div class="dialog_content">
+            <div class="sendletter">
+                <p>收件人名:<strong>崔刚健</strong></p>
+                <p>想说的话:</p>
+                <textarea name="text" cols="" rows="" class="sl_texarea" id="sl_texarea"></textarea>
+            </div>
+        </div>
+        <div class="dialog_btn clearfix">
+            <input type="button" value="取消" class="dialog_rstbtn float_r ml_15" />
+            <input type="button" class="dialog_subbtn float_r" value="发送请求" />
+            <span class="letter_num"> <span>还能输入<span class="font_num">140</span>个字！</span>
+            <input type="hidden" value="140" name="maxlength"/>
+            </span> </div>
+    </form>
+</div>
+</body>
+</html>

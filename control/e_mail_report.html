@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>请求</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/skincss/main.css" media="all" id="skincss"/>
+<link rel="stylesheet" type="text/css" href="../css/header.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/footer.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/e_mail.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/pages.css" media="all" />
+<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="../js/snav_tab.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/jquery.pagination.js"></script>
+<script type="text/javascript">
+$(function(){
+		 $("#pagination").pagination(20, {
+			num_edge_entries: 0, //边缘页数
+			num_display_entries:0, //主体页数
+			items_per_page:3, //每页显示1项
+			prev_text: "上一页 ",
+			next_text: "下一页"
+		});
+});
+</script>
+</head>
+<body>
+<!--头部通用主导航 begin-->
+<div class="header_nav">
+    <div id="logo"> <a href="http://www.banding.com.cn/" class="logo" title="半丁社区">半丁LOGO</a> </div>
+    <div class="header_navmenu" >
+        <form action="" id="top_search">
+            <input type="text" value="找人" class="top_sh_input"/>
+            <a href="#" class="top_search_btn" title="查询">查询</a>
+        </form>
+        <ul>
+            <li> <a href="#" class="exit" title="退出">退出</a> </li>
+            <li> <a href="#" class="skin" title="换肤">换肤</a> </li>
+            <li id="routeway"> <a href="#" class="routeway" title="通道">通道</a>
+                <div class="routeway_option" id="routeway_option">
+                    <p> <a href="#" title="游戏大厅">游戏大厅</a> </p>
+                    <p> <a href="#" title="充值中心">充值中心</a> </p>
+                    <p> <a href="#" title="联合运营">联合运营</a> </p>
+                    <p> <a href="#" title="客服中心">客服中心</a> </p>
+                </div>
+            </li>
+            <li> <a href="e_mail_mail.html" class="email_box" title="信箱">信箱</a> </li>
+            <li> <a href="#" class="invite" title="邀请">邀请</a> </li>
+            <li> <a href="#" class="my_space" title="我的空间">我的空间</a> </li>
+            <li> <a href="#" class="reg_name">wkylin</a> </li>
+        </ul>
+        <div class="emial_box_tips hidden"> <a href="#" class="pop_tips_close">&times;</a> <span class="arrow_tips">arrow</span>
+            <p class=" clearfix"><span class="float_l"><span class="tips_nums">email</span>系统通知知</span><a href="#" class="pop_tips_view">查看</a></p>
+        </div>
+        <div class="invite_tips hidden"> <a href="#" class="pop_tips_close">&times;</a> <span class="arrow_tips2">arrow</span>
+            <p class=" clearfix"><span class="float_l"><span class="tips_nums">invite</span>条系统通知</span><a href="#" class="pop_tips_view">查看</a></p>
+        </div>
+    </div>
+</div>
+<!--头部通用主导航 end-->
+<!--头部通用次导航 begin-->
+<ul class="sbunav_ul clearfix">
+        <li> <a href="myspace_blog.html" class="app_nav"><img src="../images/img_blog.png" width="34" height="34" alt="博客" /><span>博客</span></a></li>
+        <li> <a href="passport_basic.html" class="app_nav"><img src="../images/img_pasport.png" width="34" height="34" alt="通行证" /><span>通行证</span></a></li>
+        <li> <a href="find_friend.html" class="app_curnav"><img src="../images/img_friend.png" width="34" height="34" alt="好友" /><span>好友</span></a></li>
+        <li> <a href="self_webpage.html" class="app_nav"><img src="../images/img_selfweb.png" width="34" height="34" alt="个人主页" /><span>个人主页</span></a></li>
+        <li> <a href="#" class="app_nav"><img src="../images/img_camara.png" width="34" height="34" alt="相册" /><span>相册</span></a></li>
+    </ul>
+<!--头部通用次导航 end-->
+<!--页面主体内容模块 begin 复杂部分-->
+<div class="layout_single clearfix">
+    <div class="secondnav">
+        <ul class="navbox">
+            <li><a href="e_mail_mail.html" class="snav">信 件</a></li>
+            <li><a href="e_mail_report.html" class="snav_current">请 求</a></li>
+            <li><a href="e_mail_note.html" class="snav">通 知</a></li>
+        </ul>
+    </div>
+    <!--content bgegin-->
+    <div class="topfont">
+        <p>共有8个好友请求</p>
+        <div class="btnbox">
+            <ul class="btns">
+                <li><input type="button" value="全部忽略" class="submit_btn width_60 float_r " /></li>
+                 <li><input type="button" value="全部接受" class="submit_btn width_60 float_r " /></li>
+              
+            </ul>
+        </div>
+    </div>
+    <div class="whitecontent">
+        <div class="unit_fp">
+            <div class="unit_fp_content clearfix hidden">
+                <ul class="units_left">
+                    <li> <img src="../images/defaultUserImg50.jpg" width="50" height="50" alt=""/>
+                        <div class="names">
+                            <h1><a href="#">崔刚建</a></h1>
+                            <p>我是阿建，加我我是我，加我阿建，加我，加我我是阿建，加我，加我我是阿建，加我，加我我是阿建，加我</p>
+                        </div>
+                    </li>
+                    <li class="date tc_888">今天 20:00</li>
+                </ul>
+                <ol class="units_right">
+                    <p><a href="#">接受请求</a></p>
+                    <p><a href="#">忽略</a></p>
+                </ol>
+            </div>
+            <p>您现在是 <a href="#">崔刚健</a> 的好友了！</p>
+        </div>
+        <div class="unit_fp">
+            <div class="unit_fp_content clearfix hidden">
+                <ul class="units_left">
+                    <li> <img src="../images/defaultUserImg50.jpg" width="50" height="50" alt=""/>
+                        <div class="names">
+                            <h1><a href="#">崔刚建</a></h1>
+                            <p>我是阿建，加我我是我，加我阿建，加我，加我我是阿建，加我，加我我是阿建，加我，加我我是阿建，加我</p>
+                        </div>
+                    </li>
+                    <li class="date tc_888">今天 20:00</li>
+                </ul>
+                <ol class="units_right">
+                    <p><a href="#">接受请求</a></p>
+                    <p><a href="#">忽略</a></p>
+                </ol>
+            </div>
+            <p>您现在是 <a href="#">崔刚健</a> 的好友了！</p>
+        </div>
+        <div class="unit_fp">
+            <div class="unit_fp_content clearfix">
+                <ul class="units_left">
+                    <li> <img src="../images/defaultUserImg50.jpg" width="50" height="50" alt=""/>
+                        <div class="names">
+                            <h1><a href="#">崔刚建</a></h1>
+                            <p>我是阿建，加我我是我，加我阿建，加我，加我我是阿建，加我，加我我是阿建，加我，加我我是阿建，加我</p>
+                        </div>
+                    </li>
+                    <li class="date tc_888">今天 20:00</li>
+                </ul>
+                <ol class="units_right">
+                    <p><a href="#">接受请求</a></p>
+                    <p><a href="#">忽略</a></p>
+                </ol>
+            </div>
+            <p class="hidden">您现在是 <a href="#">崔刚健</a> 的好友了！</p>
+        </div>
+        <div class="unit_fp">
+            <div class="unit_fp_content clearfix">
+                <ul class="units_left">
+                    <li> <img src="../images/defaultUserImg50.jpg" width="50" height="50" alt=""/>
+                        <div class="names">
+                            <h1><a href="#">崔刚建</a></h1>
+                            <p>我是阿建，加我我是我，加我阿建，加我，加我我是阿建，加我，加我我是阿建，加我，加我我是阿建，加我</p>
+                        </div>
+                    </li>
+                    <li class="date tc_888">今天 20:00</li>
+                </ul>
+                <ol class="units_right">
+                    <p><a href="#">接受请求</a></p>
+                    <p><a href="#">忽略</a></p>
+                </ol>
+            </div>
+            <p>您现在是 <a href="#">崔刚健</a> 的好友了！</p>
+        </div>
+        <div class="unit_fp">
+            <div class="unit_fp_content clearfix">
+                <ul class="units_left">
+                    <li> <img src="../images/defaultUserImg50.jpg" width="50" height="50" alt=""/>
+                        <div class="names">
+                            <h1><a href="#">崔刚建</a></h1>
+                            <p>我是阿建，加我我是我，加我阿建，加我，加我我是阿建，加我，加我我是阿建，加我，加我我是阿建，加我</p>
+                        </div>
+                    </li>
+                    <li class="date tc_888">今天 20:00</li>
+                </ul>
+                <ol class="units_right">
+                    <p><a href="#">接受请求</a></p>
+                    <p><a href="#">忽略</a></p>
+                </ol>
+            </div>
+            <p>您现在是 <a href="#">崔刚健</a> 的好友了！</p>
+        </div>
+        <div class="unit_fp">
+            <div class="unit_fp_content clearfix">
+                <ul class="units_left">
+                    <li> <img src="../images/defaultUserImg50.jpg" width="50" height="50" alt=""/>
+                        <div class="names">
+                            <h1><a href="#">崔刚建</a></h1>
+                            <p>我是阿建，加我我是我，加我阿建，加我，加我我是阿建，加我，加我我是阿建，加我，加我我是阿建，加我</p>
+                        </div>
+                    </li>
+                    <li class="date tc_888">今天 20:00</li>
+                </ul>
+                <ol class="units_right">
+                    <p><a href="#">接受请求</a></p>
+                    <p><a href="#">忽略</a></p>
+                </ol>
+            </div>
+            <p>您现在是 <a href="#">崔刚健</a> 的好友了！</p>
+        </div>
+        <div class="unit_fp">
+            <div class="unit_fp_content clearfix">
+                <ul class="units_left">
+                    <li> <img src="../images/defaultUserImg50.jpg" width="50" height="50" alt=""/>
+                        <div class="names">
+                            <h1><a href="#">崔刚建</a></h1>
+                            <p>我是阿建，加我我是我，加我阿建，加我，加我我是阿建，加我，加我我是阿建，加我，加我我是阿建，加我</p>
+                        </div>
+                    </li>
+                    <li class="date tc_888">今天 20:00</li>
+                </ul>
+                <ol class="units_right">
+                    <p><a href="#">接受请求</a></p>
+                    <p><a href="#">忽略</a></p>
+                </ol>
+            </div>
+            <p>您现在是 <a href="#">崔刚健</a> 的好友了！</p>
+        </div>
+        <div class="unit_fp">
+            <div class="unit_fp_content clearfix">
+                <ul class="units_left">
+                    <li> <img src="../images/defaultUserImg50.jpg" width="50" height="50" alt=""/>
+                        <div class="names">
+                            <h1><a href="#">崔刚建</a></h1>
+                            <p>我是阿建，加我我是我，加我阿建，加我，加我我是阿建，加我，加我我是阿建，加我，加我我是阿建，加我</p>
+                        </div>
+                    </li>
+                    <li class="date tc_888">今天 20:00</li>
+                </ul>
+                <ol class="units_right">
+                    <p><a href="#">接受请求</a></p>
+                    <p><a href="#">忽略</a></p>
+                </ol>
+            </div>
+            <p>您现在是 <a href="#">崔刚健</a> 的好友了！</p>
+        </div>
+        <div class="unit_fp">
+            <div class="unit_fp_content clearfix">
+                <ul class="units_left">
+                    <li> <img src="../images/defaultUserImg50.jpg" width="50" height="50" alt=""/>
+                        <div class="names">
+                            <h1><a href="#">崔刚建</a></h1>
+                            <p>我是阿建，加我我是我，加我阿建，加我，加我我是阿建，加我，加我我是阿建，加我，加我我是阿建，加我</p>
+                        </div>
+                    </li>
+                    <li class="date tc_888">今天 20:00</li>
+                </ul>
+                <ol class="units_right">
+                    <p><a href="#">接受请求</a></p>
+                    <p><a href="#">忽略</a></p>
+                </ol>
+            </div>
+            <p>您现在是 <a href="#">崔刚健</a> 的好友了！</p>
+        </div>
+        <!-- 分页 -->
+        <div id="pagination" class="pagenation clearfix"> </div>
+    </div>
+</div>
+<!--页面主体内容模块 end-->
+<div id="footer">&nbsp;</div>
+</body>
+</html>

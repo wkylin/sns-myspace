@@ -1,0 +1,47 @@
+@charset "utf-8";
+/********************************
+ * author: wkylin 
+ * time:  2010-07-               
+ * link:  270917337@qq.com
+ * info:  header css
+ *******************************/
+/* 头部样式 bengin */
+.header_nav { width:800px; height:50px; margin:0 auto; padding-top:10px;position:relative; z-index:1; }
+.header_nav #logo { position:absolute; left:0; top:10px; height:50px; width:135px; background:url(../images/logo.png) no-repeat 0 0; overflow:hidden; }
+.header_nav #logo a.logo { display:block; width:135px; height:50px; line-height:50px; font-size:24px; text-indent:-9999em; cursor:pointer; }
+.header_navmenu { postition:absolute; right:0; top:0; height:23px;}
+.header_navmenu ul li { float:right; position:relative; display:inline; margin-right:5px; }
+.header_navmenu ul a.reg_name {float:right; height:23px; line-height:23px; }
+.header_navmenu ul a.my_space, a.my_space:hover { display:block; width:59px; height:23px; line-height:23px; }
+.header_navmenu ul a.email_box, a.email_box:hover, a.invite, a.invite:hover, a.exit, a.exit:hover, a.skin { display:block; width:37px; height:23px; line-height:23px; }
+a.skin { margin-left:5px; }/*换肤*/
+
+/* 通用查询 */
+#top_search { float:right; width:128px; background:#a6d6ec; height:22px; }
+#top_search .top_sh_input { display:block; float:left; width:100px; line-height:18px; height:18px; border:0 none; border-right:1px solid #aaa; background:#eee; color:#999; }
+#top_search a.top_search_btn, a.top_search_btn:hover { display:block; width:22px; height:22px; float:left; cursor:pointer; text-indent:-9999em; }
+#top_search a.top_search_btn{ background:url(../images/top_search_btn.png) no-repeat right center;}
+#top_search a.top_search_btn:hover { background:url(../images/top_search_btn.png) no-repeat right center; }
+/* 信箱及邀请提示信息 */
+.emial_box_tips { position:absolute; top:33px; right:70px; border:1px solid #eadb8a; background:#ffffe0; padding:10px; width:160px; color:#666; z-index:2; line-height:16px; }
+a.pop_tips_close { position:absolute; right:0; top:0; font-weight:bold; color:#1855a2;}
+span.arrow_tips { position:absolute; left:5px; top:-7px; background:url(../images/arrow.gif) 0 0 no-repeat; width:11px; height:7px; text-indent:-9999em; }
+a.pop_tips_view { color:#009dd9; padding:0 5px 0 10px; float:right; }
+.invite_tips { position:absolute; top:33px; right:280px; border:1px solid #eadb8a; background:#ffffe0; padding:10px; width:160px; color:#666; z-index:2; line-height:16px; }
+span.arrow_tips2 { position:absolute; right:5px; top:-7px; background:url(../images/arrow.gif) 0 0 no-repeat; width:11px; height:7px; text-indent:-9999em; }
+span.tips_nums { color:#ff7902; padding:0 5px; font-weight:bold; }
+/* 应用导航 bengin */
+ ul.sbunav_ul {height:60px; width:800px;margin:5px auto 0;}
+ ul.sbunav_ul li { float:left;width:52px; cursor:pointer; display:inline;}
+ ul.sbunav_ul span{display:block;margin-top:5px;}
+ ul.sbunav_ul a.app_nav,a.app_nav:hover{ display:block; width:52px; height:60px;font-weight:bold; }
+ ul.sbunav_ul a.app_curnav{ width:52px; height:60px; display:block;font-weight:bold;}
+
+/* 应用导航 end */
+/* 头部样式 end*/
+
+/*意见反馈*/
+#feedback_box { background-color:#E3EEF8; border-right:1px solid #D3E3F0; top:76px; opacity:0.6; filter:alpha(opacity=60); padding:1px 0; position:fixed; right:20px; width:20px; cursor:pointer; display:none; }
+*html #feedback_box { margin-top: -1px; position: absolute; top:expression(eval(document.compatMode &&document.compatMode=='CSS1Compat') ?documentElement.scrollTop+(this.clientHeight) : documentElement.scrollTop+(document.body.clientHeight));
+}
+#feedback_box a { background:url(../images/feedback-box.png) no-repeat center 68px; border-left:1px solid #E3EEF8; display:block; margin-left:-1px; padding:4px 4px 24px; text-decoration:none; }

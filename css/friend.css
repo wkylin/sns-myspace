@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+/********************************
+ * author: pray wkylin
+ * time:  2010-09-01             
+ * link:  106475073@qq.com
+ * info:  friend.css
+ * testroot: ietester firefox chrome
+ *******************************/
+ @import url("add_friend.css");
+/****************************************************寻找好友页面************************************************/
+.ssbox { height:80px; padding:20px 0 0 0;width:706px;margin:0 auto; }
+.ssbox ul.box { width:570px; }
+.ssbox ul.box li { width:60px; float:left; line-height:30px; }
+.ssbox ul.box li.cd { width:200px; float:left; }
+.ssbox ul.box li.atncd { width:68px; float:left;margin-top:2px; }
+.ssbox p { line-height:20px; }
+/*按条件搜索部分*/
+.search_content { width:726px;  padding-left:10px; padding-top:10px;margin:0 auto; }
+.search_content p { line-height:50px; font-weight:bold; }
+.search_content select { width:120px; height:22px; border:1px solid #ccc; }
+/*省份城市*/
+.search_content ul.province { width:175px; height:100px; float:left; padding:0px; }
+.search_content ul.province li { width:175px; height:50px; text-align:center; }
+/*性别年龄*/
+.search_content ol.sex { width:175px; float:left; height:100px; margin:0px; padding:0px; }
+.search_content ol.sex li { width:175px; height:50px; text-align:center; }
+/*单位学校*/
+.search_content ul.unit_school { width:240px; height:100px; _height:90px; float:left; }
+.search_content ul.unit_school li { width:240px; height:48px; }
+.stext { width:190px; height:18px; border:1px #ccc solid; }
+/*有头像*/
+.search_content ul.o { width:70px; float:left; }
+.search_content ul.o li { width:70px; height:30px; }
+/*按条搜索按钮*/
+.sbtns { width:726px;  clear:both;}
+/*文字*/
+.fontfriend { height:60px; padding:10px 0 10px 0;width:706px; margin:0 auto; }
+.fontfriend p { height:25px; line-height:25px; }
+/*好友*/
+.friends {width:710px; margin:0 auto;}
+.friends ul li { float:left; /*width:160px;*/ padding-right:10px; white-space: nowrap; padding-bottom:20px;display:inline;}
+.add_img { float:left; padding:0 10px 5px 0; }
+.add_info p { line-height:20px; }
+.add_info p a:hover { text-decoration:underline; }
+.add_img img { padding:2px; border:1px solid #67b8d6; background:#fff; }
+.add_info { float:left;width:100px;word-wrap:break-word; word-break:break-all; overflow:hidden; }
+.add_info a { color:#1855a2; }
+.bandingf { margin-right:10px; }
+/*好友样式*/
+.friends a.add_frienda { background:url(../images/add_friend.gif) no-repeat 0 -36px; display:block; width:67px; height:16px; text-indent:-9999px; overflow:hidden; }
+.friends a.add_frienda:hover { background:url(../images/add_friend.gif) no-repeat 0 -52px; display:block; width:67px; height:16px; }
+/*换组看看按钮*/
+.change_btn { width:706px; }
+.change_btn a.c_btn { width:99px; height:29px; background:url(../images/mbf_change.gif) no-repeat 0 -58px; display:block; text-indent:-9999px; margin:0 auto; }
+.change_btn a.c_btn:hover { background:url(../images/mbf_change.gif) no-repeat 0 -87px; display:block; width:99px; height:29px; }
+/*寻找好友页面end*/
+
+/***************************************************************管理好友页面*******************************************************/
+/* 管理好友 begin */
+/* 左侧边栏 */
+.f_option_sidebar { padding-left:15px; }
+.f_option_sidebar .f_topic_search { margin:10px 0 15px 5px; }
+.f_option_sidebar .f_topic_search .f_topic_input { width:90px; height:20px; line-height:20px; border:1px solid #aaa; color:#767676; float:left; }
+.f_option_sidebar ul.f_groups li, li.f_group_cur { display:block; text-decoration:none; height:28px; line-height:28px; cursor:pointer; position:relative; clear:both; padding-left:30px; }
+
+a.f_group_dele,a.f_group_dele:hover{position:absolute;right:5px; top:0;}
+a.f_group_dele:hover{ text-decoration:underline; color:#f00;}
+a.f_group_edit,a.f_group_edit:hover{position:absolute;right:25px; top:0;}
+a.f_group_edit:hover{text-decoration:underline;}
+.f_option_sidebar .fgroup_submit { width:100%; padding-top:3px; }
+.f_option_sidebar .fgroup_submit input { width:80px; border:1px solid #ccc; float:left; height:16px;}
+.add_group { margin:10px 0 20px 0;padding-left:15px; _margin:4px 0; *margin:4px 0;
+}
+.add_group a.new_group { font-weight:bold; text-decoration:underline; }
+input.ipt_text { width:150px; border:1px solid #ccc; height:20px; line-height:20px; color:#959595; margin:10px 10px; }
+/* 右边 主体内容 */
+.friend_num { color:#000; line-height:30px; padding:0 0 0 15px; font-weight:bold; background:#fff;}
+.main_content ol.f_manager{width:570px; padding:0 20px 0 10px;}
+.main_content ol.f_manager li {border-bottom:1px dashed #C9DED8; padding:10px 0; position:relative; }
+.main_content .f_manager_img { float:left; padding-left:5px; }
+.main_content .f_manager_img img { padding:1px; border:1px solid #ccc; }
+.main_content .f_manager_content { float:left; padding-left:10px; width:325px; line-height:18px; }
+.main_content .f_manager_content .f_user_name { font-weight:bold; color:#000; }
+.main_content .f_manager_content .f_address { color:#535353; }
+.main_content .f_manager_content .f_systips { color:#42b059; }
+.main_content a.fmcont_dele_btn, a.fmcont_dele_btn:hover { display:block; width:27px; height:27px; float:right; margin:20px 5px 0 10px; -margin:20px 3px 0 10px; }
+.main_content a.fmcont_dele_btn { background:url(../images/delete_btn.png) no-repeat 0 0; }
+.main_content a.fmcont_dele_btn:hover { background:url(../images/delete_btn.png) no-repeat 0 -27px; }
+.main_content a.fmcont_rerelation, a.fmcont_rerelation:hover { display:block; width:27px; height:27px; float:right; margin:20px 5px 0 10px; -margin:20px 3px 0 10px; }
+.main_content a.fmcont_rerelation { background:url(../images/delete_btn.png) no-repeat 0 0; }
+.main_content a.fmcont_rerelation:hover { background:url(../images/delete_btn.png) no-repeat 0 -27px; }
+.main_content .f_select_group { }
+.main_content a.select_group, a.select_group:hover { width:72px; height:19px; display:block; float:right; margin-top:25px; }
+.main_content a.select_group { background:url(../images/select_group.gif) no-repeat 0 0; }
+.main_content a.select_group:hover { background:url(../images/select_group.gif) no-repeat 0 -19px; }
+.main_content .select_group_option { position:absolute; top:52px; right:50px; border:1px solid #005ca1; z-index:9999; background:#fff; }
+.main_content .select_group_option a { color:#005ca1; text-decoration:none; }
+.main_content .select_group_option ul.select_group_ul li { border:0 none; width:130px; line-height:20px; *line-height:21px;
+padding:0 5px; }
+.relievesrequest, .relievesrelation { position:absolute; right:-15px; top:0; *top:-3px;
+-top:-3px; display:none; }
+/* 管理好友 end */
+/******************************************邀请好友页面****************************************************/
+/*搜索框*/
+ .searchbox { width:666px; margin:0 auto; text-align:center; padding:20px 0 30px 40px; }
+.searchbox .sboxleft { line-height:25px; float:left; }
+/*搜索框样式*/
+.searchbox .sboxbox input { width:290px; height:18px; line-height:20px; float:left; color:#999999; }
+/*搜索按钮*/
+.searchbox .sbtn { width:68px; float:left; }
+.copy_tips { fleft:left; color:red; line-height:30px; text-align:left; text-indent:20px; }
+/*人物图片*/
+.pmage { width:706px; padding-top:20px; padding-left:20px; }
+.pmage p { line-height:50px; }
+.pmage ul.box { float:left; }
+.pmage ul.box li { width:85px; text-align:center; float:left; height:100px; }
+.pmage ul.box li p { line-height:15px;width:85px;word-wrap:break-word; word-break:break-all; overflow:hidden;margin-top:5px; }
+.pmage ul.box li img { padding:1px; border:1px #ccc solid; }
+/*邀请好友页面end*/
+ .m_content { width:746px; margin:0 auto; border-bottom:1px dashed #C9DED8; padding-top:10px; }
+/*左边部分*/
+.m_content .m_content_l {/* width:150px;*/ padding-left:20px; white-space: nowrap; padding-bottom:20px; _padding-bottom:15px; float:left; }
+.m_content .m_content_l .add_img { float:left; padding:0 10px 5px 0; }
+.m_content .m_content_l .add_info p { line-height:20px; }
+.add_img img { padding:1px; border:1px solid #ccc; background:#fff; }
+.m_content .m_content_l a.add_frienda { background:url(../images/add_friend.gif) no-repeat 0 -35px; display:block; width:67px; height:16px; text-indent:-9999px; overflow:hidden; }
+.m_content .m_content_l a.add_frienda:hover { background:url(../images/add_friend.gif) no-repeat 0 -51px; display:block; width:67px; height:16px; }
+/*右边部分*/
+.m_content .m_content_r { width:360px; float:right; }
+.m_content .m_content_r p { line-height:23px; font-size:12px; }
+.m_content .m_content_r p span{ line-height:15px;padding-top:2px; display:block; }
+.m_content_r ul li { width:56px;padding:0 2px; float:left; line-height:20px; text-align:center; word-wrap:break-word; word-break:break-all; overflow:hidden;  }
+/*共同好友页面end*/
+ .fsearch_box { width:646px; height:40px; padding-left:40px; padding-top:20px; margin:0 auto; }
+.fsearch_box ul.box { width:308px; margin:0 auto; text-align:center; }
+.fsearch_box ul.box li { width:60px; float:left; line-height:30px; }
+.fsearch_box ul.box li.cd { width:180px; float:left; }
+.fsearch_box ul.box li.cd input { border:1px #ccc solid; height:20px; width:170px; }
+.fsearch_box ul.box li.atncd { width:68px; float:left;  }
+/*搜索框样式*/
+
+/*线*/
+.boxline { width:740px; height:10px; margin: 0 auto; border-bottom:1px dashed #C9DED8; }
+.search_title { width:726px; height:35px; padding-left:10px; padding-top:10px; margin-top:10px;margin:0 auto; }
+.search_title select { width:100px; height:22px; border:1px solid #ccc; }
+/*筛选*/
+span.search_all { width:45px; height:20px; float:left; display:block; padding-top:2px; font-size:14px; font-weight:bold; text-align:left; }
+/*省份城市*/
+.search_title ul.province { float:left; }
+.search_title ul.province input{border:1px solid #ccc;}
+.search_title ul.province li { width:140px; height:35px; float:left; }
+.search_title label { float:left; display:block; line-height:25px; }
+.search_title .select_40 { width:40px; }
+.search_title .select_60 { width:60px; }
+.search_title ul.province li.w_li100 { width:100px; }
+.search_title ul.province li.w_li80 { width:80px; }
+.search_title ul.o { width:70px; float:left; }
+.search_title ul.o li { width:70px; height:30px; }
+a.s_btnf { width:95px; height:29px; background:url(../images/search_bycon_btn.gif) no-repeat 0 0 scroll; display:block; margin:10px auto; text-indent:-9999px; }
+a.s_btnf:hover { background:url(../images/search_bycon_btn.gif) no-repeat 0 -29px; width:95px; height:29px; display:block; margin:10px auto; text-indent:-9999px; }
+/*搜索结果*/
+.search_result {width:726px; margin:10px auto 0; }
+.search_result p { line-height:25px; height:25px; padding-left:10px; }
+.search_result .rednum { padding:0 5px; color:red; }
+.search_gfriends { padding:0 0 10px 10px; border-bottom:1px dashed #C9DED8; width:726px; margin:10px auto; }
+.fswp_friend_photo { float:left; margin-right:5px; }
+.fswp_friend_photo img { padding:1px; border:1px solid #ccc; _margin-top:5px; margin-top:3px; background:#fff; }
+.fswp_friend_content { color:#535353; float:left; width:400px; line-height:20px; margin-left:10px; padding-top:5px; }
+.fswp_friend_content .pad_l35 { padding-left:35px; }
+.fswp_user_name { font-weight:bold; color:#000; }
+.fswp_friend_option { float:right; margin:5px 5px 0 0; }
+.fswp_friend_option a.fswp_fo_addf, span.fswp_fo_addedf, a.fswp_fo_email { display:block; width:78px; height:24px; text-indent:-9999em; }
+.fswp_friend_option a.fswp_fo_addf { background:url(../images/swp_all_friend_btn.gif) no-repeat 0 0; }
+.fswp_friend_option a.fswp_fo_addf:hover { background:url(../images/swp_all_friend_btn.gif) no-repeat 0 -45px; }
+.fswp_friend_option span.fswp_fo_addedf { background:url(../images/swp_all_friend_btn.gif) no-repeat 0 -88px; cursor:text; }
+.fswp_friend_option a.fswp_fo_email { background:url(../images/swp_all_friend_btn.gif) no-repeat 0 -23px; }
+.fswp_friend_option a.fswp_fo_email:hover { background:url(../images/swp_all_friend_btn.gif) no-repeat 0 -68px; }

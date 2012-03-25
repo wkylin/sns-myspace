@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>邀请好友</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/skincss/main.css" media="all" id="skincss"/>
+<link rel="stylesheet" type="text/css" href="../css/header.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/friend.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/footer.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/appear_css/relieves_dialog.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/pages.css" media="all" />
+<script type="text/javascript" src="../js/jquery-1.4.2.js" ></script>
+<!--<script type="text/javascript" src="../js/managerf.js" charset="utf-8"></script>-->
+<script type="text/javascript" src="../js/snav_tab.js" charset="utf-8"></script>
+<script type="text/javascript" src="../js/common.js" charset="utf-8"></script>
+<script type="text/javascript" src="../js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="../js/jquery.pagination.js"></script>
+<script type="text/javascript">
+$(function(){
+		 $("#pagination").pagination(20, {
+			num_edge_entries: 2, //边缘页数
+			num_display_entries:3, //主体页数
+			items_per_page:3, //每页显示1项
+			prev_text: "上一页 ",
+			next_text: "下一页"
+		});
+});
+</script>
+</head>
+<body>
+    <!--头部通用主导航 begin-->
+    <div class="header_nav">
+        <div id="logo"> <a href="http://www.banding.com.cn/" class="logo" title="半丁社区">半丁LOGO</a> </div>
+        <div class="header_navmenu" >
+            <form action="" id="top_search">
+                <input type="text" value="找人" class="top_sh_input"/>
+                <a href="#" class="top_search_btn" title="查询">查询</a>
+            </form>
+            <ul>
+                <li> <a href="#" class="exit" title="退出">退出</a> </li>
+                <li> <a href="#" class="skin" title="换肤">换肤</a> </li>
+                <li id="routeway"> <a href="#" class="routeway" title="通道">通道</a>
+                    <div class="routeway_option" id="routeway_option">
+                        <p> <a href="#" title="游戏大厅">游戏大厅</a> </p>
+                        <p> <a href="#" title="充值中心">充值中心</a> </p>
+                        <p> <a href="#" title="联合运营">联合运营</a> </p>
+                        <p> <a href="#" title="客服中心">客服中心</a> </p>
+                    </div>
+                </li>
+                <li> <a href="#" class="email_box" title="信箱">信箱</a> </li>
+                <li> <a href="#" class="invite" title="邀请">邀请</a> </li>
+                <li> <a href="#" class="my_space" title="我的空间">我的空间</a> </li>
+                <li> <a href="#" class="reg_name">wkylin</a> </li>
+            </ul>
+            <div class="emial_box_tips hidden"> <a href="#" class="pop_tips_close">&times;</a> <span class="arrow_tips">arrow</span>
+                <p class=" clearfix"><span class="float_l"><span class="tips_nums">email</span>系统通知知</span><a href="#" class="pop_tips_view">查看</a></p>
+            </div>
+            <div class="invite_tips hidden"> <a href="#" class="pop_tips_close">&times;</a> <span class="arrow_tips2">arrow</span>
+                <p class=" clearfix"><span class="float_l"><span class="tips_nums">invite</span>条系统通知</span><a href="#" class="pop_tips_view">查看</a></p>
+            </div>
+        </div>
+    </div>
+    <!--头部通用主导航 end-->
+    <!--头部通用次导航 begin-->
+<ul class="sbunav_ul clearfix">
+        <li> <a href="myspace_blog.html" class="app_nav"><img src="../images/img_blog.png" width="34" height="34" alt="博客" /><span>博客</span></a></li>
+        <li> <a href="passport_basic.html" class="app_nav"><img src="../images/img_pasport.png" width="34" height="34" alt="通行证" /><span>通行证</span></a></li>
+        <li> <a href="find_friend.html" class="app_curnav"><img src="../images/img_friend.png" width="34" height="34" alt="好友" /><span>好友</span></a></li>
+        <li> <a href="self_webpage.html" class="app_nav"><img src="../images/img_selfweb.png" width="34" height="34" alt="个人主页" /><span>个人主页</span></a></li>
+        <li> <a href="#" class="app_nav"><img src="../images/img_camara.png" width="34" height="34" alt="相册" /><span>相册</span></a></li>
+    </ul>
+    <!--头部通用次导航 end-->
+    <!--页面主体内容模块 begin 复杂部分-->
+<div class="layout_single clearfix">
+        <div class="secondnav">
+            <ul class="navbox">
+                <li><a href="find_friend.html" class="snav">寻找好友</a></li>
+                <li><a href="manage_friend.html" class="snav">好友管理</a></li>
+                <li><a href="invite_friend.html" class="snav_current">邀请好友</a></li>
+                <li><a href="com_friend.html" class="snav">共同好友</a></li>
+            </ul>
+        </div>
+        <!--content bgegin-->
+        <div class="topfont">
+            <p>通过链接位置邀请好友,用QQ或者MSN等聊天工具发送信息</p>
+
+        </div>
+        <!--白色部分内容-->
+        <div class="whitecontent">
+            <div class="searchbox">
+                <div class="sboxleft"> 链接： </div>
+                <div class="sboxbox">
+                    <form method="post" action="">
+                        <input type="text" value="http://www.banding.com.cn" id="url" class="stext" />
+                    </form>
+                </div>
+                <!--复制按钮-->
+                <div class="sbtn"><input type="button" value="复 制"  class="submit_btn width_50 float_r"/></div>
+                <div class="copy_tips">您的浏览器不支持该复制方法,请自行复制!</div>
+                <div class="clear"></div>
+            </div>
+            <!--白色部分竖线-->
+            <div class="boxline"></div>
+            <!--人物图片-->
+            <div class="pmage">
+                <p class="font_b font_14">邀请记录:</p>
+                <ul class="box">
+                    <li><img src="../images/defaultUserImg50.jpg" />
+                        <p class="red">123214324312432432</p>
+                    </li>
+                    <li><img src="../images/defaultUserImg50.jpg" />
+                        <p class="red">路人甲乙</p>
+                    </li>
+                    <li><img src="../images/defaultUserImg50.jpg" />
+                        <p class="red">路人甲乙</p>
+                    </li>
+                    <li><img src="../images/defaultUserImg50.jpg" />
+                        <p class="red">路人甲乙</p>
+                    </li>
+                    <li><img src="../images/defaultUserImg50.jpg" />
+                        <p class="red">路人甲乙</p>
+                    </li>
+                    <li><img src="../images/defaultUserImg50.jpg" />
+                        <p class="red">路人甲乙</p>
+                    </li>
+                    <li><img src="../images/defaultUserImg50.jpg" />
+                        <p class="red">路人甲乙</p>
+                    </li>
+                    <li><img src="../images/defaultUserImg50.jpg" />
+                        <p class="red">路人甲乙</p>
+                    </li>
+                    <li><img src="../images/defaultUserImg50.jpg" />
+                        <p class="red">路人甲乙</p>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <!-- 分页 -->
+            <div id="pagination" class="pagenation clearfix"> </div>
+        </div>
+        <!--白色部分结束-->
+    </div>
+    <!--页面主体内容模块 end-->
+<div id="footer">&nbsp;</div>
+</body>
+</html>
